@@ -211,6 +211,12 @@ section[id],main{scroll-margin-top:80px}
 .info3 p:not(.label){color:var(--muted);font-size:.97rem}
 @media (max-width:920px){ .info3{grid-template-columns:1fr} }
 
+/* lichte banden voor balans */
+.light{--bg:#eceeef;--surface:#ffffff;--ink:#121416;--muted:#5b6166;--line:#d4d8da;background:var(--bg);color:var(--ink)}
+.light.steps-wrap{background:var(--bg);border-color:transparent}
+.light .review{box-shadow:0 1px 2px rgba(18,20,22,.06)}
+.light .btn-ghost:hover{border-color:var(--ink)}
+
 /* merken */
 .brands{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
 .brands h3{font-size:var(--step-2);font-weight:800;margin-top:12px}
@@ -525,7 +531,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block steps-wrap" id="werkwijze">
+  <section class="block steps-wrap light" id="werkwijze">
     <div class="wrap">
       <div class="head">
         <p class="label red">Werkwijze</p>
@@ -560,7 +566,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="reviews" style="padding-top:0">
+  <section class="block light" id="reviews">
     <div class="wrap">
       <div class="reviews-top">
         <div class="head" style="margin-bottom:0">
