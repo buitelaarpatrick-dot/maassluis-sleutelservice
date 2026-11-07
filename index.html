@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sleutel bijmaken in Maassluis | Maassluis Sleutelservice</title>
-<meta name="description" content="Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Sloten en SKG-cilinders. De goedkoopste in Maassluis. Di t/m za 09:00–17:00, Pieter Jelle Troelstraweg 7.">
+<meta name="description" content="Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Sloten en SKG-cilinders. De goedkoopste in Maassluis. Di t/m za 09:00–17:00.">
 <link rel="canonical" href="https://maassluissleutelservice.nl/">
 <meta name="theme-color" content="#0a0a0b">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-duRpRwFFWseEj4nELi7Z6kSqTJuMgaUgYKAHAxjpKDk='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
@@ -324,31 +324,47 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
   .callbar .btn{flex:1;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} html{scroll-behavior:auto} }
+
+/* meerdere pagina's */
+nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--red);padding-bottom:4px}
+.head h1{font-size:clamp(2.4rem,1.5rem + 3.6vw,4.4rem);font-weight:800}
+.head h1::after{content:"";display:block;width:56px;height:3px;margin-top:20px;background:linear-gradient(90deg,var(--red) 0 60%,var(--silver) 60% 100%);border-radius:2px}
+.crumbs{font-family:var(--font-mono);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--ink)}
+.kinds.four{grid-template-columns:repeat(4,1fr)}
+.kinds a{color:inherit;text-decoration:none;display:block}
+.kinds a .kind{height:100%}
+.kind .go{display:inline-flex;gap:8px;margin-top:8px;color:var(--red);font-weight:600}
+@media (max-width:1000px){ .kinds.four{grid-template-columns:1fr 1fr} }
+@media (max-width:520px){ .kinds.four{grid-template-columns:1fr} }
+.teaser{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+@media (max-width:860px){ .teaser{grid-template-columns:1fr} }
+.footnav{display:flex;flex-wrap:wrap;gap:8px 20px}
+.footnav a{color:var(--muted);text-decoration:none}.footnav a:hover{color:var(--ink)}
+.map{margin-top:0}
 </style>
 </head>
 <body>
 
-
-<a class="skip" href="#diensten">Naar de inhoud</a>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#top" aria-label="Maassluis Sleutelservice">
+    <a class="brand" href="/" aria-label="Maassluis Sleutelservice, naar de homepage">
       <img src="assets/logo.webp" alt="Maassluis Sleutelservice" width="316" height="120">
     </a>
     <nav aria-label="Hoofdmenu">
-      <a href="#diensten">Diensten</a>
-      <a href="#over-ons">Over ons</a>
-      <a href="#soorten">Sleutels</a>
-      <a href="#sloten">Sloten</a>
-      <a href="#machines">Machines</a>
-      <a href="#vragen">Vragen</a>
-      <a href="#contact">Contact</a>
+      <a href="/sleutels.html">Sleutels</a>
+      <a href="/sloten.html">Sloten</a>
+      <a href="/machines.html">Machines</a>
+      <a href="/over-ons.html">Over ons</a>
+      <a href="/vragen.html">Vragen</a>
+      <a href="/contact.html">Contact</a>
     </nav>
     <a class="btn btn-red" href="tel:+31623062273"><span class="phone">06 23 06 22 73</span></a>
   </div>
 </header>
 
-<main id="top">
+<main id="inhoud">
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
@@ -361,7 +377,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
         <p class="lead">Sleutels bijmaken voor alle merken en soorten, met de nieuwste en beste machines. Je vindt ons in de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis.</p>
         <div class="actions">
           <a class="btn btn-red" href="tel:+31623062273">Bel <span class="phone">06 23 06 22 73</span></a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Pieter+Jelle+Troelstraweg+7+Maassluis" target="_blank" rel="noopener">Route plannen</a>
+          <a class="btn btn-ghost" href="/contact.html">Route en kaart</a>
         </div>
       </div>
 
@@ -385,73 +401,19 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </ul>
   </div>
 
-  <section class="block" id="diensten">
+  <section class="block" id="aanbod">
     <div class="wrap">
       <div class="head">
-        <p class="label red">Diensten</p>
-        <h2>Sleutels voor alle merken en soorten</h2>
-        <p>Loop binnen met je sleutel. We maken hem nauwkeurig na met onze nieuwste machines.</p>
+        <p class="label red">Wat we doen</p>
+        <h2>Waar kunnen we je mee helpen?</h2>
+        <p>Kies wat je zoekt. Of loop gewoon binnen, dan helpen we je meteen.</p>
       </div>
-      <div class="services">
-        <article class="service">
-          <img class="shot" src="assets/sleutelwand.webp" alt="Wand vol sleutelblanco's van Silca" loading="lazy" width="563" height="1000" style="object-position:50% 40%">
-          <div class="body">
-            <p class="label">Sleutelservice</p>
-            <h3>Sleutels bijmaken</h3>
-            <ul>
-              <li><span>Huis- en deursleutels</span><span>op aanvraag</span></li>
-              <li><span>Cilinder- en veiligheidssleutels</span><span>op aanvraag</span></li>
-              <li><span>Dimple- en lasersleutels</span><span>op aanvraag</span></li>
-              <li><span>Brievenbus- en kastsleutels</span><span>op aanvraag</span></li>
-              <li><span>Kruissleutels en buissleutels (tubular)</span><span>op aanvraag</span></li>
-              <li><span>Baard- en kastsleutels</span><span>op aanvraag</span></li>
-              <li><span>Fiets-, motor- en scootersleutels</span><span>op aanvraag</span></li>
-              <li><span>Hangslot- en skiboxsleutels</span><span>op aanvraag</span></li>
-              <li><span>Sleutels in kleur of met print</span><span>op aanvraag</span></li>
-              <li><span>Nieuwe cilinders en sloten</span><span>op aanvraag</span></li>
-              <li><span>Sleutel bestellen op nummer of certificaat</span><span>op aanvraag</span></li>
-            </ul>
-          </div>
-        </article>
-        <article class="service">
-          <img class="shot" src="assets/balie.webp" alt="De sleutelbalie met alle sleutelmachines" loading="lazy" width="1400" height="788">
-          <div class="body">
-            <p class="label red">Locatie</p>
-            <h3>Je vindt ons in de fietsenwinkel</h3>
-            <p style="color:var(--muted)">Onze sleutelservice zit in de fietsenwinkel aan de Pieter Jelle Troelstraweg 7. Voor fietsreparatie en onderhoud kun je daar ook terecht.</p>
-            <ul>
-              <li><span>Adres</span><span>Pieter Jelle Troelstraweg 7</span></li>
-              <li><span>Open</span><span>di t/m za 09:00 – 17:00</span></li>
-              <li><span>Telefoon</span><span>06 23 06 22 73</span></li>
-            </ul>
-            <div class="actions" style="margin-top:0"><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Pieter+Jelle+Troelstraweg+7+Maassluis" target="_blank" rel="noopener">Route plannen →</a><a class="btn btn-ghost" href="https://www.defietsonderdelen.nl" target="_blank" rel="noopener">Naar de fietsenwinkel →</a></div>
-          </div>
-        </article>
+      <div class="kinds four">
+        <a href="/sleutels.html"><figure class="kind"><img src="assets/ext/woonsleutels.jpg" alt="" loading="lazy"><figcaption><h3>Sleutels bijmaken</h3><p>Voor alle merken en soorten, van huissleutel tot kluissleutel.</p><span class="go">Bekijk →</span></figcaption></figure></a>
+        <a href="/sleutels.html#autosleutels"><figure class="kind"><img src="assets/ext/autosleutels.jpg" alt="" loading="lazy"><figcaption><h3>Autosleutels</h3><p>Reservesleutels, sleutels met chip en nieuwe behuizingen.</p><span class="go">Bekijk →</span></figcaption></figure></a>
+        <a href="/sloten.html"><figure class="kind"><img src="assets/ext/speciaal.jpg" alt="" loading="lazy"><figcaption><h3>Sloten en cilinders</h3><p>Veilige SKG-cilinders, gelijksluitend en sloten voor elke deur.</p><span class="go">Bekijk →</span></figcaption></figure></a>
+        <a href="/machines.html"><figure class="kind"><img src="assets/jma.webp" alt="" loading="lazy"><figcaption><h3>Onze machines</h3><p>De nieuwste machines van JMA, Silca en Keyline.</p><span class="go">Bekijk →</span></figcaption></figure></a>
       </div>
-
-      <div class="auto" id="autosleutels">
-        <div>
-          <p class="label red">Autosleutels</p>
-          <h3>Ook voor je autosleutel</h3>
-          <p>Een reservesleutel voor je auto, ook als er een chip in zit. Neem je sleutel mee, dan kijken we meteen wat er kan.</p>
-        </div>
-        <ul>
-          <li><span>Autosleutel bijmaken</span><span>op aanvraag</span></li>
-          <li><span>Sleutel met chip (transponder)</span><span>op aanvraag</span></li>
-          <li><span>Nieuwe behuizing voor je autosleutel</span><span>op aanvraag</span></li>
-          <li><span>Afstandsbediening</span><span>op aanvraag</span></li>
-        </ul>
-      </div>
-
-      <div class="brands">
-        <div>
-          <p class="label red">Merken</p>
-          <h3>Sleutels voor alle grote slotmerken</h3>
-          <p>Op onze sleutelwand hangen honderden sleutelblanco's van onder meer Silca, JMA, Errebi en Orion. Daarmee maken we sleutels voor vrijwel elk slot, waaronder:</p>
-        </div>
-        <ul><li>ABUS</li><li>AXA</li><li>Assa</li><li>BKS</li><li>Burg</li><li>Cisa</li><li>DOM</li><li>Evva</li><li>GeGe</li><li>Iseo</li><li>Lips</li><li>Nemef</li><li>Yale</li><li>Zeiss Ikon</li><li>Tesa</li><li>Ronis</li><li>Vachette</li><li>Viro</li><li>en meer</li></ul>
-      </div>
-
       <div class="price">
         <div>
           <p class="label red">Prijs</p>
@@ -463,110 +425,6 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
           <figcaption><span class="stars" aria-label="5 sterren">★★★★★</span> Ben v.d. A. op Google</figcaption>
         </figure>
       </div>
-    </div>
-  </section>
-
-  <section class="block g" id="soorten">
-    <div class="wrap">
-      <div class="head">
-        <p class="label red">Soorten sleutels</p>
-        <h2>Welke sleutel heb je nodig?</h2>
-        <p>Van een simpele huissleutel tot een autosleutel met chip. Op onze sleutelwand hangen honderden originele sleutelblanco's van topmerken.</p>
-      </div>
-      <h3 class="sub">Huis, kantoor en meubels</h3>
-      <div class="tiles">
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-cilinder.jpg" alt="Cilindersleutels" loading="lazy"></div><figcaption><h4>Cilindersleutels</h4><p>Voor de meeste voordeuren en cilindersloten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-baard.jpg" alt="Baardsleutels" loading="lazy"></div><figcaption><h4>Baardsleutels</h4><p>Voor binnendeuren en oudere deursloten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-dubbelbaard.jpg" alt="Dubbelbaardsleutels" loading="lazy"></div><figcaption><h4>Dubbelbaardsleutels</h4><p>Met twee baarden, onder meer voor kluizen.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-kruis.jpg" alt="Kruissleutels" loading="lazy"></div><figcaption><h4>Kruissleutels</h4><p>Met inkepingen aan vier kanten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-borst.jpg" alt="Borstsleutels" loading="lazy"></div><figcaption><h4>Borstsleutels</h4><p>Voor oudere deuren, kasten en meubels.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-doorn.jpg" alt="Doornsleutels" loading="lazy"></div><figcaption><h4>Doornsleutels</h4><p>Voor oudere deur- en kastsloten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-pijp.jpg" alt="Pijpsleutels" loading="lazy"></div><figcaption><h4>Pijpsleutels</h4><p>Met een holle schacht, voor sloten met een pen.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-dop.jpg" alt="Dopsleutels" loading="lazy"></div><figcaption><h4>Dopsleutels</h4><p>Voor kasten en speciale sloten.</p></figcaption></figure>
-      </div>
-      <h3 class="sub">Auto</h3>
-      <div class="tiles">
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-transponder.jpg" alt="Sleutels met chip" loading="lazy"></div><figcaption><h4>Sleutels met chip</h4><p>Transpondersleutels voor auto's die alleen starten met de juiste chip.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-mechanisch.jpg" alt="Mechanische autosleutels" loading="lazy"></div><figcaption><h4>Mechanische autosleutels</h4><p>Een gewone reservesleutel voor je auto.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-behuizing.jpg" alt="Nieuwe behuizing" loading="lazy"></div><figcaption><h4>Nieuwe behuizing</h4><p>Is je autosleutel kapot? Dan zetten we hem over in een nieuwe behuizing.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-afstand.jpg" alt="Afstandsbedieningen" loading="lazy"></div><figcaption><h4>Afstandsbedieningen</h4><p>Een nieuwe of extra afstandsbediening voor je auto.</p></figcaption></figure>
-      </div>
-      <p class="carbrands">Voor onder meer Volkswagen, Audi, BMW, Opel, Peugeot, Citroën en Suzuki.</p>
-      <div class="kinds two">
-        <figure class="kind">
-          <img src="assets/ext/kleur.jpg" alt="Sleutels in kleur" loading="lazy" width="600" height="800">
-          <figcaption><h3>Sleutels in kleur</h3><p>Kies een kleur, dan zie je meteen welke sleutel waarvan is.</p></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="sloten">
-    <div class="wrap">
-      <div class="head">
-        <p class="label red">Sloten en cilinders</p>
-        <h2>Een nieuw slot of een veilige cilinder</h2>
-        <p>Bij ons koop je ook sloten en cilinders van bekende merken als Iseo, Nemef, Lips, Axa, Corbin en Mauer. We adviseren je graag welke het beste bij je deur past.</p>
-      </div>
-      <div class="info3">
-        <div><p class="label red">Veiligheid</p><h3>SKG** en SKG***</h3><p>De cilinder is vaak het zwakke punt van je deur. Een cilinder met SKG** of SKG*** is beveiligd tegen kerntrekken, boren en slagsleutels. Op je voordeur hoort minimaal SKG**. Veel verzekeraars vragen dat ook.</p></div>
-        <div><p class="label red">Gemak</p><h3>Eén sleutel voor alles</h3><p>Met gelijksluitende cilinders open je je voordeur, achterdeur, schuur en garage met dezelfde sleutel. Later een cilinder erbij? Dat kan altijd.</p></div>
-        <div><p class="label red">Bedrijven</p><h3>Sluitplan op maat</h3><p>Voor bedrijven, verenigingen en wooncomplexen regelen we een sluitplan. Met een hoofdsleutel en gebruikerssleutels bepaal je zelf wie waar naar binnen kan.</p></div>
-      </div>
-      <h3 class="sub">Cilinders</h3>
-      <div class="tiles">
-          <figure class="tile"><div class="ph"><img src="assets/ext/c-euro.jpg" alt="Profielcilinders" loading="lazy"></div><figcaption><h4>Profielcilinders</h4><p>Dubbele cilinders, halve cilinders en knopcilinders voor je voordeur.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/c-staart.jpg" alt="Staartcilinders" loading="lazy"></div><figcaption><h4>Staartcilinders</h4><p>Voor sloten met een staart, zoals bij oudere deuren.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/c-automaat.jpg" alt="Automatencilinders" loading="lazy"></div><figcaption><h4>Automatencilinders</h4><p>Voor brievenbussen, kasten en automaten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/c-elektro.jpg" alt="Elektronische cilinders" loading="lazy"></div><figcaption><h4>Elektronische cilinders</h4><p>Openen met een pas, tag of app in plaats van een sleutel.</p></figcaption></figure>
-      </div>
-      <h3 class="sub">Sloten</h3>
-      <div class="tiles">
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-insteek.jpg" alt="Insteeksloten" loading="lazy"></div><figcaption><h4>Insteeksloten</h4><p>Het slot dat in je deur zit, voor voor- en binnendeuren.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-meerpunt.jpg" alt="Meerpuntssluitingen" loading="lazy"></div><figcaption><h4>Meerpuntssluitingen</h4><p>Sluit je deur op meerdere punten tegelijk af.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-hang.jpg" alt="Hangsloten" loading="lazy"></div><figcaption><h4>Hangsloten</h4><p>Voor schuur, poort, kluisje of aanhanger.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-opleg.jpg" alt="Oplegsloten" loading="lazy"></div><figcaption><h4>Oplegsloten</h4><p>Een extra slot op de binnenkant van je deur.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-fiets.jpg" alt="Fietssloten" loading="lazy"></div><figcaption><h4>Fietssloten</h4><p>Ringsloten, kettingsloten en beugelsloten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-meubel.jpg" alt="Meubelsloten" loading="lazy"></div><figcaption><h4>Meubelsloten</h4><p>Voor kasten, lades en bureaus.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-garage.jpg" alt="Garagedeursloten" loading="lazy"></div><figcaption><h4>Garagedeursloten</h4><p>Voor kantel- en garagedeuren.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/s-code.jpg" alt="Codesloten" loading="lazy"></div><figcaption><h4>Codesloten</h4><p>Openen met een code, zonder sleutel.</p></figcaption></figure>
-      </div>
-      <p class="carbrands">Tip: neem je oude slot of cilinder mee, of meet hem op. Dan weet je zeker dat de nieuwe past, ook qua draairichting van je deur.</p>
-    </div>
-  </section>
-
-  <section class="block steps-wrap g" id="werkwijze">
-    <div class="wrap">
-      <div class="head">
-        <p class="label red">Werkwijze</p>
-        <h2>Zo maken we je sleutel</h2>
-        <p>Nauwkeurig afgewerkt, zodat je nieuwe sleutel soepel in het slot past.</p>
-      </div>
-      <ol class="steps">
-        <li><span class="n">01</span><h3>Origineel meenemen</h3><p>Neem de sleutel mee die je wilt laten bijmaken.</p></li>
-        <li><span class="n">02</span><h3>Profiel bepalen</h3><p>De Camillo Bianchi Reader leest je sleutel in een paar seconden. Zo kiezen we altijd de juiste blanco.</p></li>
-        <li><span class="n">03</span><h3>Frezen</h3><p>Onze machines snijden elke inkeping op precies de goede plek en diepte.</p></li>
-        <li><span class="n">04</span><h3>Afwerken</h3><p>We ontbramen de randen en controleren of alles klopt.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="block" id="over-ons">
-    <div class="wrap about">
-      <div class="head" style="margin-bottom:0">
-        <p class="label red">Over ons</p>
-        <h2>Vakwerk, dichtbij en betaalbaar</h2>
-      </div>
-      <div class="about-text">
-        <p>Maassluis Sleutelservice zit in de fietsenwinkel aan de Pieter Jelle Troelstraweg 7. Je loopt binnen, we kijken naar je sleutel en meestal neem je de kopie meteen mee naar huis.</p>
-        <p>We werken met professionele machines van JMA, Silca en Keyline. Ze lezen je sleutel elektronisch af en snijden elke inkeping op precies de goede plek en diepte. Zo draait je nieuwe sleutel net zo soepel in het slot als het origineel.</p>
-        <p>En dat voor de laagste prijs in Maassluis. Niet voor niets geven onze klanten ons 5 sterren op Google.</p>
-      </div>
-      <dl class="facts">
-        <div><dt>Machines</dt><dd>4</dd><dd class="sub">van JMA, Silca en Keyline</dd></div>
-        <div><dt>Google</dt><dd>5,0</dd><dd class="sub">alle reviews 5 sterren</dd></div>
-        <div><dt>Open</dt><dd>di–za</dd><dd class="sub">van 09:00 tot 17:00</dd></div>
-      </dl>
     </div>
   </section>
 
@@ -594,103 +452,27 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="machines">
+  <section class="block" id="bezoek">
     <div class="wrap">
       <div class="head">
-        <p class="label red">Machines &amp; werkplaats</p>
-        <h2>De nieuwste en beste machines</h2>
-        <p>We werken met professionele machines van JMA, Silca en Keyline. Ze worden elektronisch aangestuurd, zodat elke sleutel precies goed is.</p>
+        <p class="label red">Langskomen</p>
+        <h2>Je vindt ons in de fietsenwinkel</h2>
       </div>
-      <div class="machines">
-        <figure class="machine">
-          <img src="assets/jma.webp" alt="JMA Multicode NXT sleutelmachine" loading="lazy" width="1000" height="1094">
-          <figcaption><span class="label red">JMA</span><h3>Multicode NXT</h3><p>Elektronische codemachine. Snijdt cilinder-, dimple-, laser- en autosleutels op code en kan ook graveren. Je bedient hem via een touchscreen.</p></figcaption>
-        </figure>
-        <figure class="machine">
-          <img src="assets/ninja.webp" alt="Silca Ninja elektronische sleutelmachine met touchscreen" loading="lazy" width="1000" height="1094">
-          <figcaption><span class="label red">Silca</span><h3>Ninja</h3><p>Volautomatische machine met twee snijstations: een voor huissleutels en een voor autosleutels. Maakt platte, dimple- en lasersleutels in één keer.</p></figcaption>
-        </figure>
-        <figure class="machine">
-          <img src="assets/italy.webp" alt="Italiaanse kopieermachine voor sleutels" loading="lazy" width="750" height="1000">
-          <figcaption><span class="label red">Made in Italy</span><h3>Precisie-kopieermachine</h3><p>Kopieermachine voor dimple- en veiligheidssleutels. Een taster volgt je origineel, terwijl de frees precies meesnijdt.</p></figcaption>
-        </figure>
-        <figure class="machine">
-          <img src="assets/reader.webp" alt="Keyline Camillo Bianchi Reader sleutellezer" loading="lazy" width="750" height="1000">
-          <figcaption><span class="label red">Keyline</span><h3>Camillo Bianchi Reader</h3><p>Steek je sleutel erin en binnen een paar seconden zien we welke blanco erbij hoort. Zo kiezen we nooit de verkeerde.</p></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="block g" id="vragen">
-    <div class="wrap">
-      <div class="head">
-        <p class="label red">Vragen</p>
-        <h2>Veelgestelde vragen</h2>
-      </div>
-      <div class="faq">
-        <div><h3>Moet ik een afspraak maken?</h3><p>Nee, je kunt gewoon binnenlopen. We zijn open van dinsdag tot en met zaterdag, van 09:00 tot 17:00.</p></div>
-        <div><h3>Hoe lang duurt het?</h3><p>Een gewone sleutel is meestal binnen een paar minuten klaar. Je kunt erop wachten.</p></div>
-        <div><h3>Welke sleutels kunnen jullie maken?</h3><p>Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, kruis- en buissleutels, baard- en kastsleutels, brievenbussleutels, fiets-, motor- en skiboxsleutels, sleutels in kleur en autosleutels, ook met chip.</p></div>
-        <div><h3>Verkopen jullie ook cilinders en sloten?</h3><p>Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij.</p></div>
-        <div><h3>Zijn jullie duur?</h3><p>Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews.</p></div>
-        <div><h3>Hoe nauwkeurig is een kopie?</h3><p>Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt.</p></div>
-        <div><h3>Mijn sleutel heeft een certificaat. Kan die ook?</h3><p>Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je.</p></div>
-        <div><h3>Is mijn autosleutel kapot?</h3><p>Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw.</p></div>
-        <div><h3>Welke cilinder heb ik nodig?</h3><p>Neem je oude cilinder mee of meet hem op, dan zoeken we de juiste maat. Voor je voordeur raden we minimaal SKG** aan.</p></div>
-        <div><h3>Hoe kan ik betalen?</h3><p>Je kunt pinnen of contactloos betalen.</p></div>
-        <div><h3>Waar vind ik jullie?</h3><p>In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis. Makkelijk bereikbaar vanuit Vlaardingen, Maasland, Schiedam en Rotterdam.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="contact">
-    <div class="wrap contact">
-      <div class="panel">
-        <p class="label red">Contact</p>
-        <h3>Kom langs of bel even</h3>
-        <div class="row"><span class="label">Telefoon</span><span class="v mono">06 23 06 22 73</span></div>
-        <div class="row"><span class="label">Adres</span><span class="v">Pieter Jelle Troelstraweg 7<br>Maassluis</span></div>
-        <div class="actions" style="margin-top:0">
-          <a class="btn btn-red" href="tel:+31623062273">Bel ons</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Pieter+Jelle+Troelstraweg+7+Maassluis" target="_blank" rel="noopener">Open in Google Maps</a>
-        </div>
-      </div>
-      <div class="panel">
-        <p class="label red">Openingstijden</p>
-        <table class="hours">
-          <tbody id="hours">
-            <tr class="closed" data-d="1"><td>Maandag</td><td>gesloten</td></tr>
-            <tr data-d="2"><td>Dinsdag</td><td>09:00 – 17:00</td></tr>
-            <tr data-d="3"><td>Woensdag</td><td>09:00 – 17:00</td></tr>
-            <tr data-d="4"><td>Donderdag</td><td>09:00 – 17:00</td></tr>
-            <tr data-d="5"><td>Vrijdag</td><td>09:00 – 17:00</td></tr>
-            <tr data-d="6"><td>Zaterdag</td><td>09:00 – 17:00</td></tr>
-            <tr class="closed" data-d="0"><td>Zondag</td><td>gesloten</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="map" id="map">
-        <svg class="art" viewBox="0 0 1200 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="1200" height="440" fill="#111113"/>
-          <g stroke="#26262b" stroke-width="10" fill="none" stroke-linecap="round">
-            <path d="M-20 300 C 260 260, 520 330, 820 250 S 1150 190, 1240 210"/>
-            <path d="M180 -20 L 300 460"/><path d="M640 -20 C 600 140, 700 300, 660 460"/><path d="M980 -20 L 900 460"/>
-          </g>
-          <g stroke="#1d1d21" stroke-width="4" fill="none">
-            <path d="M-20 120 L 1240 80"/><path d="M-20 400 L 1240 370"/><path d="M420 -20 L 470 460"/><path d="M800 -20 L 790 460"/><path d="M60 -20 L 120 460"/><path d="M1120 -20 L 1080 460"/>
-          </g>
-          <path d="M-20 30 C 300 60, 700 10, 1240 40" stroke="#1b2730" stroke-width="26" fill="none"/>
-          <circle cx="660" cy="190" r="34" fill="rgba(211,32,47,.18)"/>
-          <path d="M660 205 c-14-18-24-30-24-44a24 24 0 0 1 48 0c0 14-10 26-24 44z" fill="#d3202f"/>
-          <circle cx="660" cy="161" r="8" fill="#0a0a0b"/>
-        </svg>
-        <div class="overlay">
-          <div><b>Pieter Jelle Troelstraweg 7, Maassluis</b><small>In de fietsenwinkel. Google Maps laadt pas als je op de knop drukt.</small></div>
-          <a class="btn btn-red" id="map-btn" href="https://www.google.com/maps/search/?api=1&query=Pieter+Jelle+Troelstraweg+7+Maassluis" target="_blank" rel="noopener">Kaart tonen</a>
-        </div>
+      <div class="teaser" style="grid-template-columns:1fr">
+        <article class="service" style="margin:0">
+          <img class="shot" src="assets/balie.webp" alt="De sleutelbalie met alle sleutelmachines" loading="lazy" width="1400" height="788">
+          <div class="body">
+            <p class="label red">Locatie</p>
+            <h3>Pieter Jelle Troelstraweg 7</h3>
+            <p style="color:var(--muted)">Onze sleutelservice zit in de fietsenwinkel aan de Pieter Jelle Troelstraweg 7. Voor fietsreparatie en onderhoud kun je daar ook terecht.</p>
+            <ul>
+              <li><span>Adres</span><span>Pieter Jelle Troelstraweg 7</span></li>
+              <li><span>Open</span><span>di t/m za 09:00 – 17:00</span></li>
+              <li><span>Telefoon</span><span>06 23 06 22 73</span></li>
+            </ul>
+            <div class="actions" style="margin-top:0"><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Pieter+Jelle+Troelstraweg+7+Maassluis" target="_blank" rel="noopener">Route plannen →</a><a class="btn btn-red" href="/contact.html">Kaart en openingstijden</a><a class="btn btn-ghost" href="https://www.defietsonderdelen.nl" target="_blank" rel="noopener">Naar de fietsenwinkel →</a></div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -703,7 +485,8 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 <footer>
   <div class="wrap">
     <span>© 2026 Maassluis Sleutelservice · <a href="/privacy.html">Privacy</a></span>
-    <span>Pieter Jelle Troelstraweg 7, Maassluis · Di t/m za 09:00 – 17:00 · <a href="https://www.defietsonderdelen.nl" target="_blank" rel="noopener">Fietsenwinkel</a></span>
+    <nav class="footnav" aria-label="Menu onderaan"><a href="/">Home</a><a href="/sleutels.html">Sleutels</a><a href="/sloten.html">Sloten</a><a href="/machines.html">Machines</a><a href="/over-ons.html">Over ons</a><a href="/vragen.html">Vragen</a><a href="/contact.html">Contact</a><a href="https://www.defietsonderdelen.nl" target="_blank" rel="noopener">Fietsenwinkel</a></nav>
+    <span>Pieter Jelle Troelstraweg 7, Maassluis · Di t/m za 09:00 – 17:00</span>
   </div>
 </footer>
 
@@ -714,104 +497,11 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 "description":"Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Verkoop van sloten en SKG-cilinders.",
 "areaServed":["Maassluis","Vlaardingen","Maasland","Schiedam","Rotterdam"],"paymentAccepted":"Pin, contactloos"}
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Moet ik een afspraak maken?","acceptedAnswer":{"@type":"Answer","text":"Nee, je kunt gewoon binnenlopen. We zijn open van dinsdag tot en met zaterdag, van 09:00 tot 17:00."}},
-{"@type":"Question","name":"Hoe lang duurt het?","acceptedAnswer":{"@type":"Answer","text":"Een gewone sleutel is meestal binnen een paar minuten klaar. Je kunt erop wachten."}},
-{"@type":"Question","name":"Welke sleutels kunnen jullie maken?","acceptedAnswer":{"@type":"Answer","text":"Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, kruis- en buissleutels, baard- en kastsleutels, brievenbussleutels, fiets-, motor- en skiboxsleutels, sleutels in kleur en autosleutels, ook met chip."}},
-{"@type":"Question","name":"Verkopen jullie ook cilinders en sloten?","acceptedAnswer":{"@type":"Answer","text":"Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij."}},
-{"@type":"Question","name":"Zijn jullie duur?","acceptedAnswer":{"@type":"Answer","text":"Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews."}},
-{"@type":"Question","name":"Hoe nauwkeurig is een kopie?","acceptedAnswer":{"@type":"Answer","text":"Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt."}},
-{"@type":"Question","name":"Mijn sleutel heeft een certificaat. Kan die ook?","acceptedAnswer":{"@type":"Answer","text":"Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je."}},
-{"@type":"Question","name":"Is mijn autosleutel kapot?","acceptedAnswer":{"@type":"Answer","text":"Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw."}},
-{"@type":"Question","name":"Welke cilinder heb ik nodig?","acceptedAnswer":{"@type":"Answer","text":"Neem je oude cilinder mee of meet hem op, dan zoeken we de juiste maat. Voor je voordeur raden we minimaal SKG** aan."}},
-{"@type":"Question","name":"Hoe kan ik betalen?","acceptedAnswer":{"@type":"Answer","text":"Je kunt pinnen of contactloos betalen."}},
-{"@type":"Question","name":"Waar vind ik jullie?","acceptedAnswer":{"@type":"Answer","text":"In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis."}}]}
-</script>
-
 <div class="callbar">
   <a class="btn btn-red" href="tel:+31623062273">Bel direct</a>
-  <a class="btn btn-ghost" href="#contact">Route</a>
+  <a class="btn btn-ghost" href="/contact.html">Route</a>
 </div>
 
-<script>
-(function(){
-  // Sleutel met inkepingspatroon 3-5-2-6-4 en een rode laser die over het blad loopt
-  var code=[3,5,2,6,4], svg=document.getElementById('key'), NS='http://www.w3.org/2000/svg';
-  var x0=250, x1=600, top=92, base=150, step=7, w=(x1-40-x0)/code.length;
-  var d='M'+x0+' '+top+' L'+(x1-28)+' '+top+' L'+x1+' '+(top+22)+' L'+(x1-10)+' '+(base-6)+' L'+(x1-40)+' '+base;
-  for(var i=code.length-1;i>=0;i--){
-    var xs=x0+40+i*w, depth=base+4+code[i]*step;
-    d+=' L'+(xs+w*0.78)+' '+base+' L'+(xs+w*0.5)+' '+depth+' L'+(xs+w*0.22)+' '+base;
-  }
-  d+=' L'+x0+' '+base+' Z';
-  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
-  var defs=el('defs',{});
-  var g=el('linearGradient',{id:'steel',x1:0,y1:0,x2:0,y2:1},defs);
-  el('stop',{offset:'0','stop-color':'var(--steel-1)'},g);
-  el('stop',{offset:'.55','stop-color':'var(--steel-2)'},g);
-  el('stop',{offset:'1','stop-color':'var(--steel-3)'},g);
-  var lg=el('linearGradient',{id:'beam',x1:0,y1:0,x2:1,y2:0},defs);
-  el('stop',{offset:'0','stop-color':'#d3202f','stop-opacity':0},lg);
-  el('stop',{offset:'.5','stop-color':'#ff3344','stop-opacity':1},lg);
-  el('stop',{offset:'1','stop-color':'#d3202f','stop-opacity':0},lg);
-  var f=el('filter',{id:'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);
-  el('feGaussianBlur',{stdDeviation:4},f);
-  var cp=el('clipPath',{id:'blade'},defs); el('path',{d:d},cp);
-
-  // kop
-  el('circle',{cx:150,cy:121,r:86,fill:'url(#steel)',stroke:'var(--steel-3)','stroke-width':2});
-  el('circle',{cx:150,cy:121,r:70,fill:'none',stroke:'rgba(255,255,255,.18)','stroke-width':1});
-  el('circle',{cx:118,cy:121,r:22,fill:'var(--surface)',stroke:'var(--steel-3)','stroke-width':2});
-  el('rect',{x:228,y:100,width:30,height:42,rx:6,fill:'url(#steel)',stroke:'var(--steel-3)','stroke-width':2});
-  // blad
-  el('path',{d:d,fill:'url(#steel)',stroke:'var(--steel-3)','stroke-width':2,'stroke-linejoin':'round'});
-  el('line',{x1:x0+10,y1:116,x2:x1-50,y2:116,stroke:'rgba(0,0,0,.35)','stroke-width':3});
-  el('line',{x1:x0+10,y1:119,x2:x1-50,y2:119,stroke:'rgba(255,255,255,.25)','stroke-width':1});
-  // laser
-  var lz=el('g',{'clip-path':'url(#blade)'});
-  var beam=el('g',{'class':'laser'},lz);
-  el('rect',{x:x0-6,y:top-10,width:14,height:130,fill:'url(#beam)',filter:'url(#glow)'},beam);
-  el('rect',{x:x0,y:top-10,width:2,height:130,fill:'#ff3344'},beam);
-  // diepte-markers
-  for(var j=0;j<code.length;j++){
-    var cx=x0+40+j*w+w*0.5;
-    el('line',{x1:cx,y1:base+4+code[j]*step+6,x2:cx,y2:212,stroke:'var(--line)','stroke-width':1});
-    var t=el('text',{x:cx,y:234,'text-anchor':'middle','font-family':'IBM Plex Mono, monospace','font-size':16,fill:'var(--muted)'});
-    t.textContent=code[j];
-  }
-
-  // open/gesloten (tijd in Nederland), di t/m za 09:00–17:00
-  try{
-    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Amsterdam',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
-    var get=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
-    var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}, day=map[get('weekday')], mins=parseInt(get('hour'),10)*60+parseInt(get('minute'),10);
-    var isOpenDay=day>=2&&day<=6, open=isOpenDay&&mins>=540&&mins<1020;
-    var names=['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
-    var st=document.getElementById('status'), tx=document.getElementById('status-text');
-    if(open){ st.classList.add('open'); tx.innerHTML='<b>Nu open</b> · tot 17:00'; }
-    else{
-      var next=day, today=isOpenDay&&mins<540;
-      if(!today){ do{ next=(next+1)%7 }while(next<2) }
-      tx.textContent='Gesloten · '+(today?'vandaag':names[next])+' vanaf 09:00 open';
-    }
-    var row=document.querySelector('#hours tr[data-d="'+day+'"]'); if(row) row.classList.add('today');
-  }catch(e){}
-
-  // Google Maps pas laden na klik (geen cookies vooraf). In een voorbeeldweergave opent de link Google Maps.
-  var mb=document.getElementById('map-btn'), mp=document.getElementById('map');
-  var preview=/claude|claudeusercontent/.test(location.hostname);
-  if(mb && !preview){
-    mb.addEventListener('click',function(e){
-      e.preventDefault();
-      var f=document.createElement('iframe');
-      f.src='https://www.google.com/maps?q=Pieter+Jelle+Troelstraweg+7,+Maassluis&z=16&output=embed';
-      f.title='Kaart: Pieter Jelle Troelstraweg 7, Maassluis'; f.loading='lazy'; f.referrerPolicy='no-referrer-when-downgrade';
-      mp.appendChild(f); mp.classList.add('loaded');
-    });
-  }
-})();
-</script>
-
+<script src="assets/site.js"></script>
 </body>
 </html>

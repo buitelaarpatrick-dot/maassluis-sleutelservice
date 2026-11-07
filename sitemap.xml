@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://maassluissleutelservice.nl/</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/sleutels.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/sloten.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/machines.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/over-ons.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/vragen.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://maassluissleutelservice.nl/contact.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://maassluissleutelservice.nl/privacy.html</loc><lastmod>2026-11-07</lastmod></url>
 </urlset>
