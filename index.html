@@ -342,6 +342,24 @@ nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--red);padding-bottom:4p
 .footnav{display:flex;flex-wrap:wrap;gap:8px 20px}
 .footnav a{color:var(--muted);text-decoration:none}.footnav a:hover{color:var(--ink)}
 .map{margin-top:0}
+
+/* menu op telefoon */
+.mnav{display:none;position:static}
+.mnav summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid var(--line);border-radius:999px;font-weight:600;color:var(--ink);background:var(--surface)}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary i{display:grid;gap:4px;width:18px}
+.mnav summary i b{display:block;height:2px;background:var(--ink);border-radius:2px}
+.mnav summary i b:nth-child(2){background:var(--red)}
+.mnav[open] summary{border-color:var(--red)}
+.mnav-panel{position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.5);
+  padding:8px max(16px, env(safe-area-inset-right, 0px)) 18px max(16px, env(safe-area-inset-left, 0px));display:grid}
+.mnav-panel a{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-family:var(--font-display);font-weight:800;font-size:1.35rem;letter-spacing:-.01em}
+.mnav-panel a::after{content:"→";color:var(--red);font-family:var(--font-body)}
+.mnav-panel a.on{color:var(--red);box-shadow:none;padding-bottom:16px}
+.mnav-panel .btn{margin-top:16px;justify-content:center;font-size:1rem;font-family:var(--font-body);font-weight:600;border:0}
+.mnav-panel .btn::after{content:none}
+@media (max-width:1000px){ .mnav{display:block} }
+header{position:sticky}
 </style>
 </head>
 <body>
@@ -360,6 +378,7 @@ nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--red);padding-bottom:4p
       <a href="/vragen.html">Vragen</a>
       <a href="/contact.html">Contact</a>
     </nav>
+    <details class="mnav"><summary aria-label="Menu openen"><i><b></b><b></b><b></b></i>Menu</summary><nav class="mnav-panel" aria-label="Menu"><a href="/" class="on">Home</a><a href="/sleutels.html">Sleutels</a><a href="/sloten.html">Sloten</a><a href="/machines.html">Machines</a><a href="/over-ons.html">Over ons</a><a href="/vragen.html">Vragen</a><a href="/contact.html">Contact</a></nav></details>
     <a class="btn btn-red" href="tel:+31623062273"><span class="phone">06 23 06 22 73</span></a>
   </div>
 </header>
