@@ -38,6 +38,18 @@ jobs:
           curl -fsSL -o autosleutels.jpg $S/f319a79e51/automotive.jpg
           curl -fsSL -o kleur.jpg $S/a4a4d14de5/color-keys.jpg
           curl -fsSL -o cilinder.jpg https://www.nauta.com/media/catalog/product/V/E/VEIL9242.963_3.jpg
+          curl -fsSL -o n-cilinder.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/1/2/143721-category_page_grid_m-cilindersleutels.jpg
+          curl -fsSL -o n-baard.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/7/4/143747-category_page_grid_m-klaviersleutel.jpg
+          curl -fsSL -o n-dubbelbaard.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/6/8/149986-category_page_grid_m-klaviersleutels_categorie.jpg
+          curl -fsSL -o n-kruis.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/2/6/143762-category_page_grid_m-Kruissleutels.jpg
+          curl -fsSL -o n-borst.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/7/7/149677-category_page_grid_m-Borstsleutels.jpg
+          curl -fsSL -o n-doorn.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/8/7/149678-category_page_grid_m-Doornsleutels.jpg
+          curl -fsSL -o n-pijp.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/4/9/149994-category_page_grid_m-Categorie_Pijpsleutel.jpg
+          curl -fsSL -o n-dop.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/9/7/149679-category_page_grid_m-Dopsleutels.jpg
+          curl -fsSL -o n-transponder.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/4/8/149684-category_page_grid_m-transpondersleutels_2022_2.jpg
+          curl -fsSL -o n-behuizing.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/4/2/143724-category_page_grid_m-Autosleutelbehuizingen_cat.jpg
+          curl -fsSL -o n-afstand.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/9/8/149689-category_page_grid_m-Programmeerbare-afstandsbediening-auto.jpg
+          curl -fsSL -o n-mechanisch.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/5/8/149685-category_page_grid_m-Mechanische_autosleutels.jpg
           ls -la
       - name: Site klaarzetten
         run: |

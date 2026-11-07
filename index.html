@@ -188,6 +188,21 @@ section[id],main{scroll-margin-top:80px}
 @media (max-width:920px){ .kinds{grid-template-columns:1fr 1fr} }
 @media (max-width:520px){ .kinds{grid-template-columns:1fr} }
 
+.sub{font-size:1.25rem;font-weight:800;margin:clamp(28px,4vw,44px) 0 16px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tile{margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface);display:flex;flex-direction:column;min-width:0;transition:border-color .3s, transform .3s}
+.tile:hover{border-color:var(--red);transform:translateY(-3px)}
+.tile .ph{background:#fff;aspect-ratio:4/3;display:grid;place-items:center;max-width:100%}
+.tile .ph img{width:100%;height:100%;object-fit:contain;padding:8%}
+.tile figcaption{padding:16px 18px 18px;display:grid;gap:6px}
+.tile h4{margin:0;font-family:var(--font-display);font-size:1.05rem;font-weight:800;letter-spacing:-.01em}
+.tile p{color:var(--muted);font-size:.9rem;line-height:1.45}
+.carbrands{color:var(--muted);margin-top:14px}
+.kinds.two{grid-template-columns:1fr 1fr;margin-top:clamp(28px,4vw,44px)}
+.kinds.two .kind{aspect-ratio:16/10}
+@media (max-width:920px){ .tiles{grid-template-columns:1fr 1fr} }
+@media (max-width:600px){ .kinds.two{grid-template-columns:1fr} .kinds.two .kind{aspect-ratio:4/3} }
+
 /* merken */
 .brands{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
 .brands h3{font-size:var(--step-2);font-weight:800;margin-top:12px}
@@ -376,6 +391,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
               <li><span>Hangslot- en skiboxsleutels</span><span>op aanvraag</span></li>
               <li><span>Sleutels in kleur of met print</span><span>op aanvraag</span></li>
               <li><span>Nieuwe cilinders en sloten</span><span>op aanvraag</span></li>
+              <li><span>Sleutel bestellen op nummer of certificaat</span><span>op aanvraag</span></li>
             </ul>
           </div>
         </article>
@@ -404,7 +420,8 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
         <ul>
           <li><span>Autosleutel bijmaken</span><span>op aanvraag</span></li>
           <li><span>Sleutel met chip (transponder)</span><span>op aanvraag</span></li>
-          <li><span>Reservesleutel voor je auto</span><span>op aanvraag</span></li>
+          <li><span>Nieuwe behuizing voor je autosleutel</span><span>op aanvraag</span></li>
+          <li><span>Afstandsbediening</span><span>op aanvraag</span></li>
         </ul>
       </div>
 
@@ -436,25 +453,28 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
       <div class="head">
         <p class="label red">Soorten sleutels</p>
         <h2>Welke sleutel heb je nodig?</h2>
-        <p>Van een simpele huissleutel tot een autosleutel met chip. We werken met originele sleutelblanco's van topmerken als Silca.</p>
+        <p>Van een simpele huissleutel tot een autosleutel met chip. Op onze sleutelwand hangen honderden originele sleutelblanco's van topmerken.</p>
       </div>
-      <div class="kinds">
-        <figure class="kind">
-          <img src="assets/ext/woonsleutels.jpg" alt="Woonsleutels" loading="lazy" width="600" height="800">
-          <figcaption><h3>Woonsleutels</h3><p>Huis-, deur-, cilinder- en veiligheidssleutels voor bijna elk slot.</p></figcaption>
-        </figure>
-        <figure class="kind">
-          <img src="assets/ext/transponder.jpg" alt="Sleutels met chip" loading="lazy" width="600" height="800">
-          <figcaption><h3>Sleutels met chip</h3><p>Transpondersleutels voor auto's die alleen starten met de juiste chip.</p></figcaption>
-        </figure>
-        <figure class="kind">
-          <img src="assets/ext/autosleutels.jpg" alt="Autosleutels" loading="lazy" width="600" height="800">
-          <figcaption><h3>Autosleutels</h3><p>Reservesleutels voor de meeste automerken.</p></figcaption>
-        </figure>
-        <figure class="kind">
-          <img src="assets/ext/speciaal.jpg" alt="Speciale sleutels" loading="lazy" width="600" height="800">
-          <figcaption><h3>Speciale sleutels</h3><p>Voor kasten, lades, brievenbussen, hangsloten en skiboxen.</p></figcaption>
-        </figure>
+      <h3 class="sub">Huis, kantoor en meubels</h3>
+      <div class="tiles">
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-cilinder.jpg" alt="Cilindersleutels" loading="lazy"></div><figcaption><h4>Cilindersleutels</h4><p>Voor de meeste voordeuren en cilindersloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-baard.jpg" alt="Baardsleutels" loading="lazy"></div><figcaption><h4>Baardsleutels</h4><p>Voor binnendeuren en oudere deursloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-dubbelbaard.jpg" alt="Dubbelbaardsleutels" loading="lazy"></div><figcaption><h4>Dubbelbaardsleutels</h4><p>Met twee baarden, onder meer voor kluizen.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-kruis.jpg" alt="Kruissleutels" loading="lazy"></div><figcaption><h4>Kruissleutels</h4><p>Met inkepingen aan vier kanten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-borst.jpg" alt="Borstsleutels" loading="lazy"></div><figcaption><h4>Borstsleutels</h4><p>Voor kasten, meubels en kleinere sloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-doorn.jpg" alt="Doornsleutels" loading="lazy"></div><figcaption><h4>Doornsleutels</h4><p>Met een massieve punt, voor oudere sloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-pijp.jpg" alt="Pijpsleutels" loading="lazy"></div><figcaption><h4>Pijpsleutels</h4><p>Met een holle schacht, voor sloten met een pen.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-dop.jpg" alt="Dopsleutels" loading="lazy"></div><figcaption><h4>Dopsleutels</h4><p>Voor technische en speciale sloten.</p></figcaption></figure>
+      </div>
+      <h3 class="sub">Auto</h3>
+      <div class="tiles">
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-transponder.jpg" alt="Sleutels met chip" loading="lazy"></div><figcaption><h4>Sleutels met chip</h4><p>Transpondersleutels voor auto's die alleen starten met de juiste chip.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-mechanisch.jpg" alt="Mechanische autosleutels" loading="lazy"></div><figcaption><h4>Mechanische autosleutels</h4><p>Een gewone reservesleutel voor je auto.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-behuizing.jpg" alt="Nieuwe behuizing" loading="lazy"></div><figcaption><h4>Nieuwe behuizing</h4><p>Is je autosleutel kapot? Dan zetten we hem over in een nieuwe behuizing.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-afstand.jpg" alt="Afstandsbedieningen" loading="lazy"></div><figcaption><h4>Afstandsbedieningen</h4><p>Een nieuwe of extra afstandsbediening voor je auto.</p></figcaption></figure>
+      </div>
+      <p class="carbrands">Voor onder meer Volkswagen, Audi, BMW, Opel, Peugeot, Citroën en Suzuki.</p>
+      <div class="kinds two">
         <figure class="kind">
           <img src="assets/ext/kleur.jpg" alt="Sleutels in kleur" loading="lazy" width="600" height="800">
           <figcaption><h3>Sleutels in kleur</h3><p>Kies een kleur, dan zie je meteen welke sleutel waarvan is.</p></figcaption>
@@ -567,6 +587,8 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
         <div><h3>Verkopen jullie ook cilinders en sloten?</h3><p>Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij.</p></div>
         <div><h3>Zijn jullie duur?</h3><p>Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews.</p></div>
         <div><h3>Hoe nauwkeurig is een kopie?</h3><p>Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt.</p></div>
+        <div><h3>Mijn sleutel heeft een certificaat. Kan die ook?</h3><p>Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je.</p></div>
+        <div><h3>Is mijn autosleutel kapot?</h3><p>Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw.</p></div>
         <div><h3>Hoe kan ik betalen?</h3><p>Je kunt pinnen of contactloos betalen.</p></div>
         <div><h3>Waar vind ik jullie?</h3><p>In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis. Makkelijk bereikbaar vanuit Vlaardingen, Maasland, Schiedam en Rotterdam.</p></div>
       </div>
@@ -651,6 +673,8 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 {"@type":"Question","name":"Verkopen jullie ook cilinders en sloten?","acceptedAnswer":{"@type":"Answer","text":"Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij."}},
 {"@type":"Question","name":"Zijn jullie duur?","acceptedAnswer":{"@type":"Answer","text":"Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews."}},
 {"@type":"Question","name":"Hoe nauwkeurig is een kopie?","acceptedAnswer":{"@type":"Answer","text":"Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt."}},
+{"@type":"Question","name":"Mijn sleutel heeft een certificaat. Kan die ook?","acceptedAnswer":{"@type":"Answer","text":"Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je."}},
+{"@type":"Question","name":"Is mijn autosleutel kapot?","acceptedAnswer":{"@type":"Answer","text":"Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw."}},
 {"@type":"Question","name":"Hoe kan ik betalen?","acceptedAnswer":{"@type":"Answer","text":"Je kunt pinnen of contactloos betalen."}},
 {"@type":"Question","name":"Waar vind ik jullie?","acceptedAnswer":{"@type":"Answer","text":"In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis."}}]}
 </script>
