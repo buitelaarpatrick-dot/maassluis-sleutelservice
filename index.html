@@ -172,6 +172,15 @@ section[id],main{scroll-margin-top:80px}
 .faq p{color:var(--muted)}
 @media (max-width:860px){ .faq{grid-template-columns:1fr} }
 
+/* merken */
+.brands{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
+.brands h3{font-size:var(--step-2);font-weight:800;margin-top:12px}
+.brands p{color:var(--muted);margin-top:14px;max-width:48ch}
+.brands ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px;min-width:0}
+.brands li{padding:9px 16px;border:1px solid var(--line);border-radius:999px;font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;background:var(--bg)}
+.brands li:last-child{color:var(--muted);border-style:dashed}
+@media (max-width:860px){ .brands{grid-template-columns:1fr} }
+
 /* prijs */
 .price{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--red);background:linear-gradient(135deg, rgba(232,24,30,.14), transparent 60%), var(--surface)}
 .price h3{font-size:var(--step-2);font-weight:800;margin-top:12px}
@@ -320,7 +329,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
   <div class="strip">
     <ul class="wrap">
       <li>Alle merken en soorten sleutels</li>
-      <li>Scherpe prijzen</li>
+      <li>De goedkoopste in Maassluis</li>
       <li>Ook autosleutels met chip</li>
       <li>Machines van JMA, Silca en Keyline</li>
     </ul>
@@ -344,8 +353,11 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
               <li><span>Cilinder- en veiligheidssleutels</span><span>op aanvraag</span></li>
               <li><span>Dimple- en lasersleutels</span><span>op aanvraag</span></li>
               <li><span>Brievenbus- en kastsleutels</span><span>op aanvraag</span></li>
-              <li><span>Fiets- en hangslotsleutels</span><span>op aanvraag</span></li>
-              <li><span>Sleutels in kleur</span><span>op aanvraag</span></li>
+              <li><span>Kruissleutels en buissleutels (tubular)</span><span>op aanvraag</span></li>
+              <li><span>Baard- en kastsleutels</span><span>op aanvraag</span></li>
+              <li><span>Fiets-, motor- en scootersleutels</span><span>op aanvraag</span></li>
+              <li><span>Hangslot- en skiboxsleutels</span><span>op aanvraag</span></li>
+              <li><span>Sleutels in kleur of met print</span><span>op aanvraag</span></li>
               <li><span>Nieuwe cilinders en sloten</span><span>op aanvraag</span></li>
             </ul>
           </div>
@@ -374,16 +386,25 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
         </div>
         <ul>
           <li><span>Autosleutel bijmaken</span><span>op aanvraag</span></li>
-          <li><span>Sleutel met chip</span><span>op aanvraag</span></li>
+          <li><span>Sleutel met chip (transponder)</span><span>op aanvraag</span></li>
           <li><span>Reservesleutel voor je auto</span><span>op aanvraag</span></li>
         </ul>
+      </div>
+
+      <div class="brands">
+        <div>
+          <p class="label red">Merken</p>
+          <h3>Sleutels voor alle grote slotmerken</h3>
+          <p>Op onze sleutelwand hangen honderden sleutelblanco's van onder meer Silca, JMA, Errebi en Orion. Daarmee maken we sleutels voor vrijwel elk slot, waaronder:</p>
+        </div>
+        <ul><li>ABUS</li><li>AXA</li><li>Assa</li><li>BKS</li><li>Burg</li><li>Cisa</li><li>DOM</li><li>Evva</li><li>GeGe</li><li>Iseo</li><li>Lips</li><li>Nemef</li><li>Yale</li><li>Zeiss Ikon</li><li>Tesa</li><li>Ronis</li><li>Vachette</li><li>Viro</li><li>en meer</li></ul>
       </div>
 
       <div class="price">
         <div>
           <p class="label red">Prijs</p>
-          <h3>Scherp geprijsd</h3>
-          <p>Een sleutel bijmaken hoeft niet duur te zijn. Bij ons betaal je een lage, eerlijke prijs. Dat merken onze klanten ook.</p>
+          <h3>De goedkoopste in Maassluis</h3>
+          <p>Een sleutel bijmaken hoeft niet duur te zijn. Bij ons ben je het goedkoopst uit in Maassluis, zonder in te leveren op kwaliteit. Dat merken onze klanten ook.</p>
         </div>
         <figure>
           <blockquote>&ldquo;Snelle service en de goedkoopste in Maassluis.&rdquo;</blockquote>
@@ -418,7 +439,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
       <div class="about-text">
         <p>Maassluis Sleutelservice zit in de fietsenwinkel aan de Pieter Jelle Troelstraweg 7. Je loopt binnen, we kijken naar je sleutel en meestal neem je de kopie meteen mee naar huis.</p>
         <p>We werken met professionele machines van JMA, Silca en Keyline. Ze lezen je sleutel elektronisch af en snijden elke inkeping op precies de goede plek en diepte. Zo draait je nieuwe sleutel net zo soepel in het slot als het origineel.</p>
-        <p>En dat voor een scherpe prijs. Niet voor niets geven onze klanten ons 5 sterren op Google.</p>
+        <p>En dat voor de laagste prijs in Maassluis. Niet voor niets geven onze klanten ons 5 sterren op Google.</p>
       </div>
       <dl class="facts">
         <div><dt>Machines</dt><dd>4</dd><dd class="sub">van JMA, Silca en Keyline</dd></div>
@@ -489,9 +510,9 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
       <div class="faq">
         <div><h3>Moet ik een afspraak maken?</h3><p>Nee, je kunt gewoon binnenlopen. We zijn open van dinsdag tot en met zaterdag, van 09:00 tot 17:00.</p></div>
         <div><h3>Hoe lang duurt het?</h3><p>Een gewone sleutel is meestal binnen een paar minuten klaar. Je kunt erop wachten.</p></div>
-        <div><h3>Welke sleutels kunnen jullie maken?</h3><p>Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, brievenbus- en kastsleutels, fietssleutels, sleutels in kleur en autosleutels, ook met chip.</p></div>
+        <div><h3>Welke sleutels kunnen jullie maken?</h3><p>Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, kruis- en buissleutels, baard- en kastsleutels, brievenbussleutels, fiets-, motor- en skiboxsleutels, sleutels in kleur en autosleutels, ook met chip.</p></div>
         <div><h3>Verkopen jullie ook cilinders en sloten?</h3><p>Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij.</p></div>
-        <div><h3>Zijn jullie duur?</h3><p>Nee. We houden onze prijzen scherp. Klanten noemen ons in hun reviews zelfs de goedkoopste in Maassluis.</p></div>
+        <div><h3>Zijn jullie duur?</h3><p>Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews.</p></div>
         <div><h3>Hoe nauwkeurig is een kopie?</h3><p>Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt.</p></div>
         <div><h3>Hoe kan ik betalen?</h3><p>Je kunt pinnen of contactloos betalen.</p></div>
         <div><h3>Waar vind ik jullie?</h3><p>In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis. Makkelijk bereikbaar vanuit Vlaardingen, Maasland, Schiedam en Rotterdam.</p></div>
@@ -573,9 +594,9 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Moet ik een afspraak maken?","acceptedAnswer":{"@type":"Answer","text":"Nee, je kunt gewoon binnenlopen. We zijn open van dinsdag tot en met zaterdag, van 09:00 tot 17:00."}},
 {"@type":"Question","name":"Hoe lang duurt het?","acceptedAnswer":{"@type":"Answer","text":"Een gewone sleutel is meestal binnen een paar minuten klaar. Je kunt erop wachten."}},
-{"@type":"Question","name":"Welke sleutels kunnen jullie maken?","acceptedAnswer":{"@type":"Answer","text":"Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, brievenbus- en kastsleutels, fietssleutels, sleutels in kleur en autosleutels, ook met chip."}},
+{"@type":"Question","name":"Welke sleutels kunnen jullie maken?","acceptedAnswer":{"@type":"Answer","text":"Huis- en deursleutels, cilinder-, veiligheids-, dimple- en lasersleutels, kruis- en buissleutels, baard- en kastsleutels, brievenbussleutels, fiets-, motor- en skiboxsleutels, sleutels in kleur en autosleutels, ook met chip."}},
 {"@type":"Question","name":"Verkopen jullie ook cilinders en sloten?","acceptedAnswer":{"@type":"Answer","text":"Ja. Je kunt bij ons een nieuwe cilinder voor je slot halen, met extra sleutels erbij."}},
-{"@type":"Question","name":"Zijn jullie duur?","acceptedAnswer":{"@type":"Answer","text":"Nee. We houden onze prijzen scherp. Klanten noemen ons in hun reviews zelfs de goedkoopste in Maassluis."}},
+{"@type":"Question","name":"Zijn jullie duur?","acceptedAnswer":{"@type":"Answer","text":"Nee. We zijn de goedkoopste sleutelservice in Maassluis. Dat zeggen onze klanten ook in hun reviews."}},
 {"@type":"Question","name":"Hoe nauwkeurig is een kopie?","acceptedAnswer":{"@type":"Answer","text":"Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt."}},
 {"@type":"Question","name":"Hoe kan ik betalen?","acceptedAnswer":{"@type":"Answer","text":"Je kunt pinnen of contactloos betalen."}},
 {"@type":"Question","name":"Waar vind ik jullie?","acceptedAnswer":{"@type":"Answer","text":"In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis."}}]}
