@@ -192,8 +192,8 @@ section[id],main{scroll-margin-top:80px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .tile{margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface);display:flex;flex-direction:column;min-width:0;transition:border-color .3s, transform .3s}
 .tile:hover{border-color:var(--red);transform:translateY(-3px)}
-.tile .ph{background:#fff;aspect-ratio:4/3;display:grid;place-items:center;max-width:100%}
-.tile .ph img{width:100%;height:100%;object-fit:contain;padding:8%}
+.tile .ph{position:relative;overflow:hidden;background:#fff;aspect-ratio:4/3;max-width:100%}
+.tile .ph img{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain}
 .tile figcaption{padding:16px 18px 18px;display:grid;gap:6px}
 .tile h4{margin:0;font-family:var(--font-display);font-size:1.05rem;font-weight:800;letter-spacing:-.01em}
 .tile p{color:var(--muted);font-size:.9rem;line-height:1.45}
@@ -461,10 +461,10 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
           <figure class="tile"><div class="ph"><img src="assets/ext/n-baard.jpg" alt="Baardsleutels" loading="lazy"></div><figcaption><h4>Baardsleutels</h4><p>Voor binnendeuren en oudere deursloten.</p></figcaption></figure>
           <figure class="tile"><div class="ph"><img src="assets/ext/n-dubbelbaard.jpg" alt="Dubbelbaardsleutels" loading="lazy"></div><figcaption><h4>Dubbelbaardsleutels</h4><p>Met twee baarden, onder meer voor kluizen.</p></figcaption></figure>
           <figure class="tile"><div class="ph"><img src="assets/ext/n-kruis.jpg" alt="Kruissleutels" loading="lazy"></div><figcaption><h4>Kruissleutels</h4><p>Met inkepingen aan vier kanten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-borst.jpg" alt="Borstsleutels" loading="lazy"></div><figcaption><h4>Borstsleutels</h4><p>Voor kasten, meubels en kleinere sloten.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-doorn.jpg" alt="Doornsleutels" loading="lazy"></div><figcaption><h4>Doornsleutels</h4><p>Met een massieve punt, voor oudere sloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-borst.jpg" alt="Borstsleutels" loading="lazy"></div><figcaption><h4>Borstsleutels</h4><p>Voor oudere deuren, kasten en meubels.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-doorn.jpg" alt="Doornsleutels" loading="lazy"></div><figcaption><h4>Doornsleutels</h4><p>Voor oudere deur- en kastsloten.</p></figcaption></figure>
           <figure class="tile"><div class="ph"><img src="assets/ext/n-pijp.jpg" alt="Pijpsleutels" loading="lazy"></div><figcaption><h4>Pijpsleutels</h4><p>Met een holle schacht, voor sloten met een pen.</p></figcaption></figure>
-          <figure class="tile"><div class="ph"><img src="assets/ext/n-dop.jpg" alt="Dopsleutels" loading="lazy"></div><figcaption><h4>Dopsleutels</h4><p>Voor technische en speciale sloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/n-dop.jpg" alt="Dopsleutels" loading="lazy"></div><figcaption><h4>Dopsleutels</h4><p>Voor kasten en speciale sloten.</p></figcaption></figure>
       </div>
       <h3 class="sub">Auto</h3>
       <div class="tiles">
