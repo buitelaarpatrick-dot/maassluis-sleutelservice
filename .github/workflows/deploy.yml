@@ -27,6 +27,18 @@ jobs:
           for w in 400 500 600; do curl -fsSLO $B/@fontsource/figtree@5/files/figtree-latin-$w-normal.woff2; done
           for w in 400 500; do curl -fsSLO $B/@fontsource/ibm-plex-mono@5/files/ibm-plex-mono-latin-$w-normal.woff2; done
           ls -la
+      - name: Fotos van leveranciers ophalen
+        continue-on-error: true
+        run: |
+          mkdir -p assets/ext && cd assets/ext
+          S=https://a.storyblok.com/f/241607/600x800
+          curl -fsSL -o woonsleutels.jpg $S/b22cf1f13d/residential-keys.jpg
+          curl -fsSL -o transponder.jpg $S/817d4dbcf8/trasponder-keys.jpg
+          curl -fsSL -o speciaal.jpg $S/e8b14f0586/mobili-sorting.jpg
+          curl -fsSL -o autosleutels.jpg $S/f319a79e51/automotive.jpg
+          curl -fsSL -o kleur.jpg $S/a4a4d14de5/color-keys.jpg
+          curl -fsSL -o cilinder.jpg https://www.nauta.com/media/catalog/product/V/E/VEIL9242.963_3.jpg
+          ls -la
       - name: Site klaarzetten
         run: |
           mkdir _site
