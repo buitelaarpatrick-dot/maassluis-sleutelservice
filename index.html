@@ -26,12 +26,14 @@
 body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 /* Layout: donkere showroom — zwart staal, één grote sleutel onder een rode laser als held, rood alleen als detail */
 :root{
-  --bg:#0a0a0b;          /* diep zwart */
-  --surface:#131315;     /* staal donker */
-  --surface-2:#1a1a1d;
-  --ink:#f1eee8;         /* warm wit */
-  --muted:#9b978f;
-  --line:#2a2a2e;
+  --bg:#0a0a0b;          /* zwart */
+  --surface:#16171a;     /* donkergrijs */
+  --surface-2:#1d1f23;
+  --ink:#f2f3f4;         /* wit */
+  --muted:#a3a7ad;       /* grijs */
+  --line:#2a2c30;
+  --silver:#cfd2d6;      /* lichtgrijs */
+  --silver-2:#e4e6e9;
   --red:#e8181e;         /* logo-rood */
   --red-glow:rgba(232,24,30,.45);
   --steel-1:#d9dadc; --steel-2:#8d9096; --steel-3:#4a4c51;
@@ -61,7 +63,7 @@ a{color:inherit}
 
 /* header */
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
-header{position:sticky;top:env(safe-area-inset-top, 0px);z-index:9;background:rgba(10,10,11,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:env(safe-area-inset-top, 0px);z-index:9;background:rgba(22,23,26,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em}
 .brand img{height:58px;width:auto;display:block}
@@ -148,11 +150,11 @@ section[id],main{scroll-margin-top:80px}
 .photo span{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:var(--bg);padding:7px 12px;border-radius:6px;border:1px solid var(--line)}
 
 /* werkwijze */
-.steps-wrap{background:var(--surface);border-block:1px solid var(--line)}
+.steps-wrap{border-block:1px solid var(--line)}
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
 .steps li{padding:28px 24px 8px 0;display:grid;gap:12px;align-content:start;min-width:0;position:relative}
 .steps li::before{content:"";position:absolute;top:-1px;left:0;width:36px;height:2px;background:var(--red)}
-.steps .n{font-family:var(--font-display);font-weight:800;font-size:2.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px var(--muted)}
+.steps .n{font-family:var(--font-display);font-weight:800;font-size:2.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px var(--silver)}
 .steps h3{font-size:1.2rem;font-weight:600}
 .steps p{color:var(--muted);font-size:.97rem}
 @media (max-width:920px){ .steps{grid-template-columns:1fr 1fr} }
@@ -179,12 +181,12 @@ section[id],main{scroll-margin-top:80px}
 .kinds{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .kind{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface);aspect-ratio:4/5;max-width:100%;min-width:0}
 .kind img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.kind.kind-white img{object-fit:contain;background:#fff;padding:12% 12% 38%}
+.kind.kind-white img{object-fit:contain;background:var(--silver-2);padding:12% 12% 38%}
 .kind:hover img{transform:scale(1.04)}
 .kind::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, transparent 40%, rgba(10,10,11,.92) 85%)}
 .kind figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px;display:grid;gap:6px}
 .kind h3{font-size:1.3rem;font-weight:800}
-.kind p{color:#d6d2cb;font-size:.95rem;line-height:1.5}
+.kind p{color:#d3d6da;font-size:.95rem;line-height:1.5}
 @media (max-width:920px){ .kinds{grid-template-columns:1fr 1fr} }
 @media (max-width:520px){ .kinds{grid-template-columns:1fr} }
 
@@ -192,7 +194,7 @@ section[id],main{scroll-margin-top:80px}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .tile{margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface);display:flex;flex-direction:column;min-width:0;transition:border-color .3s, transform .3s}
 .tile:hover{border-color:var(--red);transform:translateY(-3px)}
-.tile .ph{position:relative;overflow:hidden;background:#fff;aspect-ratio:4/3;max-width:100%}
+.tile .ph{position:relative;overflow:hidden;background:var(--silver-2);aspect-ratio:4/3;max-width:100%}
 .tile .ph img{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain}
 .tile figcaption{padding:16px 18px 18px;display:grid;gap:6px}
 .tile h4{margin:0;font-family:var(--font-display);font-size:1.05rem;font-weight:800;letter-spacing:-.01em}
@@ -211,19 +213,21 @@ section[id],main{scroll-margin-top:80px}
 .info3 p:not(.label){color:var(--muted);font-size:.97rem}
 @media (max-width:920px){ .info3{grid-template-columns:1fr} }
 
-/* lichte banden voor balans */
-.light{--bg:#eceeef;--surface:#ffffff;--ink:#121416;--muted:#5b6166;--line:#d4d8da;background:var(--bg);color:var(--ink)}
-.light.steps-wrap{background:var(--bg);border-color:transparent}
-.light .review{box-shadow:0 1px 2px rgba(18,20,22,.06)}
-.light .btn-ghost:hover{border-color:var(--ink)}
+/* afwisseling zwart / donkergrijs, met lichtgrijs en rood als accent */
+.g{--bg:#16171a;--surface:#202226;--line:#30333a;background:var(--bg)}
+.strip.g{border-color:var(--line)}
+.strip li{color:var(--silver)}
+.g .tile,.g .review,.g .kind,.g .faq div{border-color:var(--line)}
+.head h2::after{content:"";display:block;width:56px;height:3px;margin-top:18px;background:linear-gradient(90deg,var(--red) 0 60%,var(--silver) 60% 100%);border-radius:2px}
+footer{background:var(--bg)}
 
 /* merken */
 .brands{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
 .brands h3{font-size:var(--step-2);font-weight:800;margin-top:12px}
 .brands p{color:var(--muted);margin-top:14px;max-width:48ch}
 .brands ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px;min-width:0}
-.brands li{padding:9px 16px;border:1px solid var(--line);border-radius:999px;font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;background:var(--bg)}
-.brands li:last-child{color:var(--muted);border-style:dashed}
+.brands li{padding:9px 16px;border-radius:999px;font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;background:var(--silver);color:#121416}
+.brands li:last-child{background:transparent;color:var(--muted);border:1px dashed var(--muted)}
 @media (max-width:860px){ .brands{grid-template-columns:1fr} }
 
 /* prijs */
@@ -237,7 +241,7 @@ section[id],main{scroll-margin-top:80px}
 
 /* over ons */
 .about{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,72px);align-items:start}
-.about-text{display:grid;gap:16px;color:#d6d2cb;font-size:1.08rem;max-width:62ch}
+.about-text{display:grid;gap:16px;color:#d3d6da;font-size:1.08rem;max-width:62ch}
 .facts{grid-column:1 / -1;margin:clamp(12px,2vw,24px) 0 0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
 .facts div{padding:24px 24px 0 0;display:grid;gap:4px;min-width:0}
 .facts dt{font-family:var(--font-mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
@@ -372,7 +376,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <div class="strip">
+  <div class="strip g">
     <ul class="wrap">
       <li>Alle merken en soorten sleutels</li>
       <li>De goedkoopste in Maassluis</li>
@@ -462,7 +466,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="soorten" style="padding-top:0">
+  <section class="block g" id="soorten">
     <div class="wrap">
       <div class="head">
         <p class="label red">Soorten sleutels</p>
@@ -497,7 +501,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="sloten" style="padding-top:0">
+  <section class="block" id="sloten">
     <div class="wrap">
       <div class="head">
         <p class="label red">Sloten en cilinders</p>
@@ -531,7 +535,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block steps-wrap light" id="werkwijze">
+  <section class="block steps-wrap g" id="werkwijze">
     <div class="wrap">
       <div class="head">
         <p class="label red">Werkwijze</p>
@@ -566,7 +570,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block light" id="reviews">
+  <section class="block g" id="reviews">
     <div class="wrap">
       <div class="reviews-top">
         <div class="head" style="margin-bottom:0">
@@ -618,7 +622,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="vragen" style="padding-top:0">
+  <section class="block g" id="vragen">
     <div class="wrap">
       <div class="head">
         <p class="label red">Vragen</p>
@@ -640,7 +644,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="block" id="contact" style="padding-top:0">
+  <section class="block" id="contact">
     <div class="wrap contact">
       <div class="panel">
         <p class="label red">Contact</p>
@@ -691,7 +695,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     </div>
   </section>
 
-  <section class="big">
+  <section class="big g">
     <div class="wrap"><p>Eén sleutel kwijt?<br><span>Wij maken er een nieuwe.</span></p></div>
   </section>
 </main>
