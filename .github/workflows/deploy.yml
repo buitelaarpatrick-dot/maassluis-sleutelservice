@@ -50,6 +50,18 @@ jobs:
           curl -fsSL -o n-behuizing.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/4/2/143724-category_page_grid_m-Autosleutelbehuizingen_cat.jpg
           curl -fsSL -o n-afstand.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/9/8/149689-category_page_grid_m-Programmeerbare-afstandsbediening-auto.jpg
           curl -fsSL -o n-mechanisch.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/5/8/149685-category_page_grid_m-Mechanische_autosleutels.jpg
+          curl -fsSL -o c-euro.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/5/3/143735-category_page_grid_m-europrofielcilinder.jpg
+          curl -fsSL -o c-staart.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/1/4/143741-category_page_grid_m-staartcilinder_1.jpg
+          curl -fsSL -o c-automaat.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/6/3/143736-category_page_grid_m-automatencilinder.jpg
+          curl -fsSL -o c-elektro.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/8/4/143748-category_page_grid_m-elektronische-cilinders.jpg
+          curl -fsSL -o s-insteek.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/7/6/67-category_page_grid_m-insteeksloten.jpg
+          curl -fsSL -o s-meerpunt.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/8/6/68-category_page_grid_m-meerpunts.jpg
+          curl -fsSL -o s-hang.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/1/3/143731-category_page_grid_m-hangsloten.jpg
+          curl -fsSL -o s-opleg.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/6/5/56-category_page_grid_m-oplegsloten.jpg
+          curl -fsSL -o s-fiets.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/2/6/150062-category_page_grid_m-Fietssloten_cat.jpg
+          curl -fsSL -o s-meubel.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/9/3/143739-category_page_grid_m-meubelsloten.jpg
+          curl -fsSL -o s-garage.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/6/6/66-category_page_grid_m-garagedeursloten.jpg
+          curl -fsSL -o s-code.jpg https://www.nauta.com/media/experius/subcategorylistview/cache/4/6/64-category_page_grid_m-codesloten.jpg
           ls -la
       - name: Site klaarzetten
         run: |

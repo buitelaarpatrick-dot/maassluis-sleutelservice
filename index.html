@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sleutel bijmaken in Maassluis | Maassluis Sleutelservice</title>
-<meta name="description" content="Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Met de nieuwste machines. Di t/m za 09:00–17:00, Pieter Jelle Troelstraweg 7.">
+<meta name="description" content="Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Sloten en SKG-cilinders. De goedkoopste in Maassluis. Di t/m za 09:00–17:00, Pieter Jelle Troelstraweg 7.">
 <link rel="canonical" href="https://maassluissleutelservice.nl/">
 <meta name="theme-color" content="#0a0a0b">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-duRpRwFFWseEj4nELi7Z6kSqTJuMgaUgYKAHAxjpKDk='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
@@ -198,10 +198,18 @@ section[id],main{scroll-margin-top:80px}
 .tile h4{margin:0;font-family:var(--font-display);font-size:1.05rem;font-weight:800;letter-spacing:-.01em}
 .tile p{color:var(--muted);font-size:.9rem;line-height:1.45}
 .carbrands{color:var(--muted);margin-top:14px}
-.kinds.two{grid-template-columns:1fr 1fr;margin-top:clamp(28px,4vw,44px)}
-.kinds.two .kind{aspect-ratio:16/10}
+.kinds.two{grid-template-columns:1fr;margin-top:clamp(28px,4vw,44px)}
+.kinds.two .kind{aspect-ratio:21/8}
+.kinds.two .kind img{object-position:50% 60%}
 @media (max-width:920px){ .tiles{grid-template-columns:1fr 1fr} }
 @media (max-width:600px){ .kinds.two{grid-template-columns:1fr} .kinds.two .kind{aspect-ratio:4/3} }
+
+/* sloten */
+.info3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.info3>div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,3vw,30px);display:grid;gap:10px;align-content:start;min-width:0}
+.info3 h3{font-size:1.35rem;font-weight:800}
+.info3 p:not(.label){color:var(--muted);font-size:.97rem}
+@media (max-width:920px){ .info3{grid-template-columns:1fr} }
 
 /* merken */
 .brands{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(26px,4vw,48px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
@@ -320,8 +328,8 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
     <nav aria-label="Hoofdmenu">
       <a href="#diensten">Diensten</a>
       <a href="#over-ons">Over ons</a>
-      <a href="#reviews">Reviews</a>
       <a href="#soorten">Sleutels</a>
+      <a href="#sloten">Sloten</a>
       <a href="#machines">Machines</a>
       <a href="#vragen">Vragen</a>
       <a href="#contact">Contact</a>
@@ -479,11 +487,41 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
           <img src="assets/ext/kleur.jpg" alt="Sleutels in kleur" loading="lazy" width="600" height="800">
           <figcaption><h3>Sleutels in kleur</h3><p>Kies een kleur, dan zie je meteen welke sleutel waarvan is.</p></figcaption>
         </figure>
-        <figure class="kind kind-white">
-          <img src="assets/ext/cilinder.jpg" alt="Cilinders met SKG-keurmerk" loading="lazy" width="600" height="800">
-          <figcaption><h3>Cilinders met SKG-keurmerk</h3><p>Inbraakwerende cilinders met SKG** of SKG***, ook gelijksluitend: één sleutel voor al je deuren.</p></figcaption>
-        </figure>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="sloten" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <p class="label red">Sloten en cilinders</p>
+        <h2>Een nieuw slot of een veilige cilinder</h2>
+        <p>Bij ons koop je ook sloten en cilinders van bekende merken als Iseo, Nemef, Lips, Axa, Corbin en Mauer. We adviseren je graag welke het beste bij je deur past.</p>
+      </div>
+      <div class="info3">
+        <div><p class="label red">Veiligheid</p><h3>SKG** en SKG***</h3><p>De cilinder is vaak het zwakke punt van je deur. Een cilinder met SKG** of SKG*** is beveiligd tegen kerntrekken, boren en slagsleutels. Op je voordeur hoort minimaal SKG**. Veel verzekeraars vragen dat ook.</p></div>
+        <div><p class="label red">Gemak</p><h3>Eén sleutel voor alles</h3><p>Met gelijksluitende cilinders open je je voordeur, achterdeur, schuur en garage met dezelfde sleutel. Later een cilinder erbij? Dat kan altijd.</p></div>
+        <div><p class="label red">Bedrijven</p><h3>Sluitplan op maat</h3><p>Voor bedrijven, verenigingen en wooncomplexen regelen we een sluitplan. Met een hoofdsleutel en gebruikerssleutels bepaal je zelf wie waar naar binnen kan.</p></div>
+      </div>
+      <h3 class="sub">Cilinders</h3>
+      <div class="tiles">
+          <figure class="tile"><div class="ph"><img src="assets/ext/c-euro.jpg" alt="Profielcilinders" loading="lazy"></div><figcaption><h4>Profielcilinders</h4><p>Dubbele cilinders, halve cilinders en knopcilinders voor je voordeur.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/c-staart.jpg" alt="Staartcilinders" loading="lazy"></div><figcaption><h4>Staartcilinders</h4><p>Voor sloten met een staart, zoals bij oudere deuren.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/c-automaat.jpg" alt="Automatencilinders" loading="lazy"></div><figcaption><h4>Automatencilinders</h4><p>Voor brievenbussen, kasten en automaten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/c-elektro.jpg" alt="Elektronische cilinders" loading="lazy"></div><figcaption><h4>Elektronische cilinders</h4><p>Openen met een pas, tag of app in plaats van een sleutel.</p></figcaption></figure>
+      </div>
+      <h3 class="sub">Sloten</h3>
+      <div class="tiles">
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-insteek.jpg" alt="Insteeksloten" loading="lazy"></div><figcaption><h4>Insteeksloten</h4><p>Het slot dat in je deur zit, voor voor- en binnendeuren.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-meerpunt.jpg" alt="Meerpuntssluitingen" loading="lazy"></div><figcaption><h4>Meerpuntssluitingen</h4><p>Sluit je deur op meerdere punten tegelijk af.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-hang.jpg" alt="Hangsloten" loading="lazy"></div><figcaption><h4>Hangsloten</h4><p>Voor schuur, poort, kluisje of aanhanger.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-opleg.jpg" alt="Oplegsloten" loading="lazy"></div><figcaption><h4>Oplegsloten</h4><p>Een extra slot op de binnenkant van je deur.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-fiets.jpg" alt="Fietssloten" loading="lazy"></div><figcaption><h4>Fietssloten</h4><p>Ringsloten, kettingsloten en beugelsloten.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-meubel.jpg" alt="Meubelsloten" loading="lazy"></div><figcaption><h4>Meubelsloten</h4><p>Voor kasten, lades en bureaus.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-garage.jpg" alt="Garagedeursloten" loading="lazy"></div><figcaption><h4>Garagedeursloten</h4><p>Voor kantel- en garagedeuren.</p></figcaption></figure>
+          <figure class="tile"><div class="ph"><img src="assets/ext/s-code.jpg" alt="Codesloten" loading="lazy"></div><figcaption><h4>Codesloten</h4><p>Openen met een code, zonder sleutel.</p></figcaption></figure>
+      </div>
+      <p class="carbrands">Tip: neem je oude slot of cilinder mee, of meet hem op. Dan weet je zeker dat de nieuwe past, ook qua draairichting van je deur.</p>
     </div>
   </section>
 
@@ -589,6 +627,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
         <div><h3>Hoe nauwkeurig is een kopie?</h3><p>Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt.</p></div>
         <div><h3>Mijn sleutel heeft een certificaat. Kan die ook?</h3><p>Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je.</p></div>
         <div><h3>Is mijn autosleutel kapot?</h3><p>Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw.</p></div>
+        <div><h3>Welke cilinder heb ik nodig?</h3><p>Neem je oude cilinder mee of meet hem op, dan zoeken we de juiste maat. Voor je voordeur raden we minimaal SKG** aan.</p></div>
         <div><h3>Hoe kan ik betalen?</h3><p>Je kunt pinnen of contactloos betalen.</p></div>
         <div><h3>Waar vind ik jullie?</h3><p>In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis. Makkelijk bereikbaar vanuit Vlaardingen, Maasland, Schiedam en Rotterdam.</p></div>
       </div>
@@ -662,7 +701,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 {"@context":"https://schema.org","@type":"Locksmith","name":"Maassluis Sleutelservice","url":"https://maassluissleutelservice.nl/","telephone":"+31623062273",
 "address":{"@type":"PostalAddress","streetAddress":"Pieter Jelle Troelstraweg 7","addressLocality":"Maassluis","addressCountry":"NL"},
 "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"17:00"}],
-"description":"Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Met de nieuwste machines.",
+"description":"Sleutels bijmaken voor alle merken en soorten in Maassluis, ook autosleutels met chip. Verkoop van sloten en SKG-cilinders.",
 "areaServed":["Maassluis","Vlaardingen","Maasland","Schiedam","Rotterdam"],"paymentAccepted":"Pin, contactloos"}
 </script>
 <script type="application/ld+json">
@@ -675,6 +714,7 @@ footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:12px 32px;
 {"@type":"Question","name":"Hoe nauwkeurig is een kopie?","acceptedAnswer":{"@type":"Answer","text":"Onze machines lezen het profiel elektronisch af en snijden elke inkeping precies op maat. Daarna ontbramen we de sleutel en controleren we of alles klopt."}},
 {"@type":"Question","name":"Mijn sleutel heeft een certificaat. Kan die ook?","acceptedAnswer":{"@type":"Answer","text":"Ja. Sommige sleutels zijn beveiligd tegen kopiëren. Die mogen alleen worden bijgemaakt als je het eigendomscertificaat laat zien. Neem je certificaat mee, dan bestellen we een originele sleutel voor je."}},
 {"@type":"Question","name":"Is mijn autosleutel kapot?","acceptedAnswer":{"@type":"Answer","text":"Vaak is alleen de behuizing kapot. Dan zetten we de binnenkant over in een nieuwe behuizing, en werkt je sleutel weer als nieuw."}},
+{"@type":"Question","name":"Welke cilinder heb ik nodig?","acceptedAnswer":{"@type":"Answer","text":"Neem je oude cilinder mee of meet hem op, dan zoeken we de juiste maat. Voor je voordeur raden we minimaal SKG** aan."}},
 {"@type":"Question","name":"Hoe kan ik betalen?","acceptedAnswer":{"@type":"Answer","text":"Je kunt pinnen of contactloos betalen."}},
 {"@type":"Question","name":"Waar vind ik jullie?","acceptedAnswer":{"@type":"Answer","text":"In de fietsenwinkel aan de Pieter Jelle Troelstraweg 7 in Maassluis."}}]}
 </script>
