@@ -6,7 +6,7 @@
 <title>Contact en route | Maassluis Sleutelservice</title>
 <meta name="description" content="Maassluis Sleutelservice, Pieter Jelle Troelstraweg 7, Maassluis. Bel 06 23 06 22 73. Open dinsdag t/m zaterdag van 09:00 tot 17:00.">
 <link rel="canonical" href="https://maassluissleutelservice.nl/contact.html">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="#ffffff">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
@@ -360,6 +360,41 @@ nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--red);padding-bottom:4p
 .mnav-panel .btn::after{content:none}
 @media (max-width:1000px){ .mnav{display:block} }
 header{position:sticky}
+
+/* ===== licht thema: helder, rustig en goed leesbaar ===== */
+:root{--bg:#f6f7f8;--surface:#ffffff;--surface-2:#eef0f2;--ink:#15171a;--muted:#4e545b;--line:#dcdfe3;--silver:#c3c8ce;--silver-2:#eceef0;
+  --step-0:clamp(1.06rem,1rem + .25vw,1.16rem);color-scheme:light}
+body::after{opacity:.02}
+header{background:rgba(255,255,255,.95);box-shadow:0 1px 0 var(--line)}
+nav{font-size:1rem}
+nav a{color:#3b4046}
+.label{font-size:.82rem}
+.g{--bg:#eceef1;--surface:#ffffff;--line:#d6dade}
+.strip li{color:var(--ink)}
+.head h2::after,.head h1::after{background:linear-gradient(90deg,var(--red) 0 60%,var(--ink) 60% 100%)}
+.hero h1 .outline{color:var(--ink);-webkit-text-stroke:0}
+.hero::before{background:radial-gradient(closest-side, rgba(232,24,30,.09), transparent 70%)}
+.key-stage{background:linear-gradient(180deg,#ffffff,#eef0f2)}
+.steps .n{-webkit-text-stroke:1.2px #8a9097}
+.about-text{color:var(--ink)}
+.service:hover{border-color:#b9bec4}
+.kind figcaption{color:#fff}
+.kind p{color:#e9ebee}
+.tile,.service,.review,.panel,.info3>div,.machine,.auto,.brands,.price,.key-stage,.status,.chip-rating{box-shadow:0 1px 2px rgba(20,24,28,.05),0 6px 18px -10px rgba(20,24,28,.12)}
+.tile p,.facts dd.sub,.steps p,.info3 p:not(.label){font-size:1rem}
+.btn-ghost{border-color:#c3c8ce;background:var(--surface)}
+.price{background:linear-gradient(135deg, rgba(232,24,30,.06), transparent 60%), var(--surface)}
+.auto{background:radial-gradient(120% 140% at 100% 0%, rgba(232,24,30,.06), transparent 55%), var(--surface)}
+.brands li{background:var(--silver-2)}
+.map .overlay{color:#fff}
+.map .overlay small{color:#c9cdd2}
+.map iframe{filter:none}
+.callbar{background:rgba(255,255,255,.97)}
+.mnav-panel{box-shadow:0 20px 40px rgba(20,24,28,.15)}
+.mnav summary i b{background:var(--ink)}
+.dark{--bg:#16181b;--surface:#1f2125;--ink:#f2f3f4;--muted:#b0b4ba;--line:#2d3035;background:var(--bg);color:var(--ink)}
+.review footer{background:none}
+.dark .head h2::after{background:linear-gradient(90deg,var(--red) 0 60%,var(--ink) 60% 100%)}
 </style>
 </head>
 <body>
@@ -445,7 +480,7 @@ header{position:sticky}
   </section>
 </main>
 
-<footer>
+<footer class="dark">
   <div class="wrap">
     <span>© 2026 Maassluis Sleutelservice · <a href="/privacy.html">Privacy</a></span>
     <nav class="footnav" aria-label="Menu onderaan"><a href="/">Home</a><a href="/sleutels.html">Sleutels</a><a href="/sloten.html">Sloten</a><a href="/machines.html">Machines</a><a href="/over-ons.html">Over ons</a><a href="/vragen.html">Vragen</a><a href="/contact.html">Contact</a><a href="https://www.defietsonderdelen.nl" target="_blank" rel="noopener">Fietsenwinkel</a></nav>
