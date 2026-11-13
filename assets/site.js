@@ -76,4 +76,21 @@
       mp.appendChild(f); mp.classList.add('loaded');
     });
   }
+
+  // Quiet entrance animations; keep content visible when motion is reduced or JS is unavailable.
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var animated=document.querySelectorAll('.head,.kind,.service,.tile,.machine,.review,.info3>div,.price,.auto,.brands,.panel,.faq>div,.atelier-visual,.atelier-copy,.closing-grid');
+    animated.forEach(function(item){item.classList.add('reveal')});
+    document.documentElement.classList.add('motion-ready');
+    var observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}});
+    },{threshold:.07,rootMargin:'0px 0px -24px 0px'});
+    animated.forEach(function(item){observer.observe(item)});
+  }
+
+  var menu=document.querySelector('.mnav');
+  if(menu){
+    menu.addEventListener('toggle',function(){var label=menu.querySelector('summary');if(label)label.setAttribute('aria-label',menu.open?'Menu sluiten':'Menu openen')});
+    document.addEventListener('keydown',function(event){if(event.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary').focus()}});
+  }
 })();
