@@ -144,22 +144,37 @@ footer a:hover{color:#fff}
 @media (max-width:380px){.strip ul{grid-template-columns:1fr}.hero .chips{display:grid}.tile p{font-size:.82rem}}
 @media (prefers-reduced-motion:reduce){.key-stage{animation:none}.reveal{opacity:1!important;transform:none!important}}
 
-/* Accentblauw sluit aan bij de winkel; de rode lasersnede blijft een herkenbaar werkplaatsdetail. */
-:root{--red:#2459d8;--red-glow:rgba(36,89,216,.42)}
+/* Premium afwerking: dieprood, donker staal en heldere, rustige details. */
+:root{--red:#b61f32;--red-glow:rgba(182,31,50,.42)}
 html,body{max-width:100%;overflow-x:clip}
 img,svg,video{max-width:100%}
-:focus-visible{outline-color:#2459d8}
-.hero.dark{background:radial-gradient(ellipse at 78% 45%,rgba(36,89,216,.22),transparent 42%),linear-gradient(135deg,#17191c,#101114 62%,#19191c)}
-.hero.dark::before{background:radial-gradient(closest-side,rgba(36,89,216,.14),transparent 70%)}
-.price.dark{background:radial-gradient(circle at 6% 0%,rgba(36,89,216,.2),transparent 36%),linear-gradient(135deg,#25262b,#17191d)}
-.auto{background:radial-gradient(120% 140% at 100% 0%,rgba(36,89,216,.15),transparent 55%),var(--surface)}
-.review::before{color:rgba(36,89,216,.1)}
+:focus-visible{outline-color:#b61f32}
+header.dark{background:rgba(15,17,20,.96);border-bottom-color:rgba(182,31,50,.2);box-shadow:0 12px 38px -30px rgba(0,0,0,.85)}
+header nav a.on{color:#fff}
+header nav a::after{background:linear-gradient(90deg,#8c1728,#d53a4b)}
+.btn-red{background:linear-gradient(135deg,#d12b40 0%,#ae1c31 54%,#8f1527 100%);box-shadow:0 12px 30px -17px rgba(182,31,50,.68)}
+.btn-red:hover{filter:brightness(1.08);box-shadow:0 16px 36px -13px rgba(182,31,50,.58)}
+.btn-ghost{border-color:rgba(218,220,224,.32)}
+.btn-ghost:hover{border-color:#d5b8bd;background:rgba(255,255,255,.04)}
+.hero.dark{background:radial-gradient(ellipse at 79% 42%,rgba(142,19,40,.28),transparent 40%),linear-gradient(135deg,#18191d 0%,#101114 62%,#19181b 100%)}
+.hero.dark::before{background:radial-gradient(closest-side,rgba(182,31,50,.17),transparent 70%)}
+.hero.dark::after,.pagehero.dark::after{opacity:.28;background:repeating-linear-gradient(115deg,transparent 0 139px,rgba(197,35,57,.07) 140px 141px)}
+.key-stage{border-color:rgba(203,90,105,.28);background:linear-gradient(145deg,rgba(59,43,47,.52),rgba(20,21,25,.96));box-shadow:0 34px 75px -35px rgba(0,0,0,.86)}
+.key-stage::before{background:linear-gradient(90deg,transparent,rgba(208,119,130,.48),transparent)}
+.key-stage svg{filter:drop-shadow(0 18px 28px rgba(0,0,0,.38))}
+.price.dark{border-color:rgba(190,75,91,.3);background:radial-gradient(circle at 6% 0%,rgba(154,23,43,.26),transparent 36%),linear-gradient(135deg,#29262b,#17181c)}
+.auto{background:radial-gradient(120% 140% at 100% 0%,rgba(154,23,43,.16),transparent 55%),var(--surface)}
+.review::before{color:rgba(182,31,50,.1)}
+.kind .go::before{background:linear-gradient(90deg,#8c1728,#d53a4b)}
+.kinds a:hover .kind{box-shadow:0 24px 52px -28px rgba(95,16,31,.3)}
+.tile:hover,.machine:hover{border-color:rgba(182,31,50,.42)}
 .mnav summary{min-height:48px;transition:background .2s ease,border-color .2s ease,transform .2s ease}
-.mnav summary:hover{border-color:#2459d8;background:#f3f6ff}
+.mnav summary:hover{border-color:#b61f32;background:rgba(182,31,50,.07)}
+.mnav[open] summary{border-color:rgba(182,31,50,.7)}
 .mnav-panel a{min-height:56px}
-.mnav-panel a.on{color:#2459d8}
+.mnav-panel a.on{color:#b61f32}
 @media (prefers-reduced-motion:no-preference){
-  .hero .hero-grid>div:first-child{animation:hero-copy-arrive .72s cubic-bezier(.2,.7,.2,1) both}
+  .hero .hero-grid>div:first-child{animation:hero-copy-arrive .78s cubic-bezier(.2,.7,.2,1) both}
   .mnav[open] .mnav-panel{animation:menu-arrive .22s ease-out both}
   .mnav summary:hover{transform:translateY(-1px)}
   @keyframes hero-copy-arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
