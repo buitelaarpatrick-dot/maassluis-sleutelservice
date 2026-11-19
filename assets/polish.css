@@ -374,3 +374,6 @@ footer .wrap{padding-block:26px}
 header>.bar>.brand{grid-column:1;grid-row:1}
 header>.bar>nav:not(.mnav-panel){grid-column:1/-1;grid-row:2}
 header>.bar>.btn{grid-column:2;grid-row:1;justify-self:end;align-self:center}
+
+/* The homepage hero has a more specific legacy rule; keep its key display light as well. */
+.hero.dark .key-stage{color:#272a2f;background:linear-gradient(155deg,#fff,#f0f1f3);border-color:#d8dbe0;box-shadow:0 14px 34px -25px rgba(23,27,32,.24)}
