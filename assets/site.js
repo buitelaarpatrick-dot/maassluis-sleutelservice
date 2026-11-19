@@ -16,9 +16,9 @@
   el('stop',{offset:'.55','stop-color':'var(--steel-2)'},g);
   el('stop',{offset:'1','stop-color':'var(--steel-3)'},g);
   var lg=el('linearGradient',{id:'beam',x1:0,y1:0,x2:1,y2:0},defs);
-  el('stop',{offset:'0','stop-color':'#d3202f','stop-opacity':0},lg);
-  el('stop',{offset:'.5','stop-color':'#ff3344','stop-opacity':1},lg);
-  el('stop',{offset:'1','stop-color':'#d3202f','stop-opacity':0},lg);
+  el('stop',{offset:'0','stop-color':'#95182a','stop-opacity':0},lg);
+  el('stop',{offset:'.5','stop-color':'#c02135','stop-opacity':1},lg);
+  el('stop',{offset:'1','stop-color':'#95182a','stop-opacity':0},lg);
   var f=el('filter',{id:'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);
   el('feGaussianBlur',{stdDeviation:4},f);
   var cp=el('clipPath',{id:'blade'},defs); el('path',{d:d},cp);
@@ -36,7 +36,7 @@
   var lz=el('g',{'clip-path':'url(#blade)'});
   var beam=el('g',{'class':'laser'},lz);
   el('rect',{x:x0-6,y:top-10,width:14,height:130,fill:'url(#beam)',filter:'url(#glow)'},beam);
-  el('rect',{x:x0,y:top-10,width:2,height:130,fill:'#ff3344'},beam);
+  el('rect',{x:x0,y:top-10,width:2,height:130,fill:'#c02135'},beam);
   // diepte-markers
   for(var j=0;j<code.length;j++){
     var cx=x0+40+j*w+w*0.5;
