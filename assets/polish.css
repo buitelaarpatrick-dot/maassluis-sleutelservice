@@ -268,3 +268,104 @@ footer a:hover{color:#fff}
   .key-stage{padding:18px}
   .atelier{background:#e9ebee}
 }
+
+/* Compactere lay-out en navigatie die altijd zichtbaar is. */
+:root{--radius:12px}
+.wrap{max-width:1160px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+header.dark{background:#292c31}
+header>.bar{display:grid!important;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px;row-gap:0;min-height:0;padding-top:12px;padding-bottom:12px}
+header .brand img{height:48px;width:auto}
+header>.bar>nav:not(.mnav-panel){display:grid;grid-column:1/-1;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;width:100vw;position:relative;left:50%;transform:translateX(-50%);margin:12px 0 -12px;padding:0 max(20px,calc((100vw - 1120px)/2));background:#b51e32}
+header>.bar>nav:not(.mnav-panel) a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;color:#fff;font-size:.94rem;font-weight:600;text-decoration:none;transition:background .18s ease}
+header>.bar>nav:not(.mnav-panel) a::after{display:none}
+header>.bar>nav:not(.mnav-panel) a:hover,header>.bar>nav:not(.mnav-panel) a.on{background:#94182a;color:#fff}
+header>.bar>nav:not(.mnav-panel) a.on{box-shadow:inset 0 -3px rgba(255,255,255,.7)}
+header .mnav{display:none!important}
+header>.bar>.btn{min-height:40px;padding:8px 14px;border-radius:6px;font-size:.86rem;box-shadow:none}
+.btn{min-height:44px;padding:11px 18px;border-radius:8px;box-shadow:none}
+section.block{padding-block:clamp(54px,6vw,78px)}
+.hero{padding-block:clamp(52px,6vw,76px)}
+.hero-grid{gap:clamp(28px,4vw,52px)}
+.hero h1{font-size:clamp(2.8rem,4.5vw,4.35rem);line-height:1.02;letter-spacing:-.045em}
+.hero .chips{gap:7px}
+.head{margin-bottom:30px}
+.head h2{font-size:clamp(1.85rem,2.8vw,2.8rem);letter-spacing:-.035em}
+.kinds,.tiles,.machines,.reviews,.info3{gap:14px}
+.kind,.service,.tile,.machine,.review,.panel,.info3>div{border-radius:12px;box-shadow:0 8px 22px -20px rgba(17,20,25,.32)}
+.kind figcaption{padding:20px}
+.tile figcaption{padding:16px}
+.machine figcaption{padding:18px}
+.review{padding:20px}
+.price.dark{box-shadow:0 10px 24px -22px rgba(24,28,33,.22)}
+.auto,.brands,.map,.panel{border-radius:14px}
+.atelier-grid{gap:clamp(28px,4vw,54px)}
+.atelier-visual{min-height:440px}
+.atelier-main{border-radius:14px}
+.atelier-inset{border-radius:14px}
+.faq{gap:0 36px}
+.faq div{padding-block:20px}
+.contact{gap:16px}
+.info3>div{padding:22px}
+footer .wrap{padding-block:26px}
+@media(max-width:860px){
+  header>.bar{column-gap:12px}
+  header .brand img{height:42px}
+  header>.bar>nav:not(.mnav-panel){grid-template-columns:repeat(3,minmax(0,1fr));margin-top:10px}
+  header>.bar>nav:not(.mnav-panel) a{min-height:42px;padding:7px 8px;font-size:.88rem}
+  header>.bar>.btn{min-height:38px;padding:7px 10px}
+}
+@media(max-width:600px){
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  header>.bar{padding-top:9px;padding-bottom:9px}
+  header .brand img{height:38px}
+  header>.bar>nav:not(.mnav-panel){margin-top:8px;margin-bottom:-9px;padding-inline:8px}
+  header>.bar>nav:not(.mnav-panel) a{min-height:40px;padding:6px 4px;font-size:.83rem}
+  header>.bar>.btn{font-size:.76rem;min-height:36px;padding:6px 9px}
+  .hero{padding-block:38px 44px}
+  .hero-grid{gap:24px}
+  .hero h1{font-size:clamp(2.25rem,8.5vw,3.15rem);line-height:1.04}
+  .hero p.lead{font-size:1rem;line-height:1.55}
+  .hero .status,.hero .chip-rating{font-size:.78rem}
+  .hero .actions{gap:9px;flex-wrap:wrap}
+  .hero .actions .btn{min-height:42px;padding:10px 13px;font-size:.9rem}
+  .key-stage{border-radius:12px;padding:14px}
+  .key-meta{gap:10px;padding-top:12px}
+  .strip ul{padding-block:14px;gap:10px}
+  .strip li{font-size:.84rem}
+  section.block{padding-block:44px}
+  .head{margin-bottom:22px}
+  .head h2{font-size:1.8rem;line-height:1.1}
+  .head p:not(.label):not(.crumbs){font-size:.96rem}
+  .kinds,.tiles,.machines,.reviews,.info3{gap:12px}
+  .kind{aspect-ratio:1.18/1}
+  .kind figcaption{padding:16px}
+  .kind h3{font-size:1.2rem}
+  .tile figcaption{padding:13px}
+  .tile h4{font-size:.96rem}
+  .tile p{font-size:.84rem}
+  .machine figcaption{padding:15px}
+  .review{padding:17px}
+  .review blockquote{font-size:.94rem}
+  .atelier-grid{gap:24px}
+  .atelier-visual{min-height:300px}
+  .atelier-copy h2{font-size:2.2rem}
+  .atelier-copy>p:not(.label){font-size:.96rem}
+  .atelier-points li{padding:10px 0}
+  .closing-cta{padding-block:40px}
+  .pagehero.dark{padding-block:38px 42px}
+  .pagehero .head h1{font-size:clamp(2.1rem,8vw,2.8rem)}
+  .info3>div{padding:17px}
+  .faq{gap:0 20px}
+  .faq div{padding-block:16px}
+  .map .overlay{left:10px;right:10px;bottom:10px;padding:12px}
+  .panel{padding:18px}
+  footer .wrap{padding-bottom:112px}
+}
+@media(max-width:360px){
+  header>.bar>nav:not(.mnav-panel) a{font-size:.76rem}
+  .hero .actions .btn{padding:9px 11px;font-size:.84rem}
+  .key-meta{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
