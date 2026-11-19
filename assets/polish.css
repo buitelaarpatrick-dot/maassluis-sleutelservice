@@ -377,3 +377,25 @@ header>.bar>.btn{grid-column:2;grid-row:1;justify-self:end;align-self:center}
 
 /* The homepage hero has a more specific legacy rule; keep its key display light as well. */
 .hero.dark .key-stage{color:#272a2f;background:linear-gradient(155deg,#fff,#f0f1f3);border-color:#d8dbe0;box-shadow:0 14px 34px -25px rgba(23,27,32,.24)}
+
+/* Rounded navigation controls with clear tap targets. */
+header>.bar>nav:not(.mnav-panel){gap:8px;padding-top:8px;padding-bottom:8px}
+header>.bar>nav:not(.mnav-panel) a{min-height:40px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:#34373d;padding-inline:18px}
+header>.bar>nav:not(.mnav-panel) a:hover{background:#45484e;border-color:rgba(255,255,255,.3);box-shadow:0 4px 10px rgba(60,8,19,.16)}
+header>.bar>nav:not(.mnav-panel) a.on{background:#24272c;border-color:rgba(255,255,255,.4);box-shadow:inset 0 -2px rgba(181,30,50,.85)}
+header>.bar>.btn{border-radius:999px;min-height:42px}
+.btn{border-radius:999px}
+@media(max-width:860px){
+  header>.bar>nav:not(.mnav-panel){gap:6px}
+  header>.bar>nav:not(.mnav-panel) a{min-height:44px;padding-inline:8px}
+}
+@media(max-width:600px){
+  header>.bar>nav:not(.mnav-panel){gap:5px;padding-top:7px;padding-bottom:7px}
+  header>.bar>nav:not(.mnav-panel) a{min-height:44px;padding-inline:4px;font-size:.82rem}
+  header>.bar>.btn{min-height:40px}
+  .hero .actions .btn{min-height:44px}
+  .callbar .btn{min-height:44px}
+}
+@media(max-width:360px){
+  header>.bar>nav:not(.mnav-panel) a{font-size:.75rem}
+}
