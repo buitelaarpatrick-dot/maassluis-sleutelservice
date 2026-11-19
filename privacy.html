@@ -5,21 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy | Maassluis Sleutelservice</title>
 <meta name="description" content="Privacyverklaring van Maassluis Sleutelservice in Maassluis.">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#2459d8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/png" href="/assets/icon.png">
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
-:root{--bg:#f6f7f8;--surface:#ffffff;--ink:#15171a;--muted:#4e545b;--line:#dcdfe3;--red:#e8181e;color-scheme:light}
+:root{--bg:#f6f7f8;--surface:#ffffff;--ink:#15171a;--muted:#4e545b;--line:#dcdfe3;--red:#2459d8;--red-glow:rgba(36,89,216,.42);color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.05rem;line-height:1.65;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
 header{border-bottom:1px solid var(--line);background:#fff}
-header .wrap{padding-block:14px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-header img{height:52px;width:auto;display:block}
-header a.back{color:var(--muted);text-decoration:none}
-header a.back:hover{color:var(--ink)}
+header .wrap{padding-block:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header img{height:46px;width:auto;max-width:100%;display:block}
+header a.back{color:var(--muted);text-decoration:none;transition:color .2s ease}
+header a.back:hover{color:var(--red)}
+.privacy-nav{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:12px}
+.privacy-nav a{color:var(--muted);text-decoration:none;transition:color .2s ease}
+.privacy-nav a:hover{color:var(--red)}
+@media(max-width:520px){header .wrap{padding-block:12px}header img{height:40px}header a.back{font-size:.94rem}.privacy-nav{gap:10px 14px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 main .wrap{padding-block:56px 80px}
 h1,h2{font-family:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
 h1{font-size:clamp(2rem,1.4rem + 2.6vw,3.2rem);margin:0 0 24px}
@@ -33,7 +38,7 @@ footer .wrap{padding-block:24px}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="/"><img src="/assets/logo.webp" alt="Maassluis Sleutelservice" width="316" height="120"></a><a class="back" href="/">← Terug naar de site</a></div></header>
+<header><div class="wrap"><a href="/"><img src="/assets/logo.webp" alt="Maassluis Sleutelservice" width="316" height="120"></a><a class="back" href="/">Terug naar de site</a></div></header>
 <main><div class="wrap">
 <p class="label">Privacy</p>
 <h1>Privacyverklaring</h1>
@@ -61,6 +66,6 @@ footer .wrap{padding-block:24px}
 <p>We kunnen deze privacyverklaring aanpassen. De nieuwste versie staat altijd op deze pagina.</p>
 <p style="color:var(--muted);margin-top:40px">Laatst bijgewerkt: 7 november 2026</p>
 </div></main>
-<footer><div class="wrap">© 2026 Maassluis Sleutelservice · Pieter Jelle Troelstraweg 7, Maassluis · 06 23 06 22 73</div></footer>
+<footer><div class="wrap"><div>© 2026 Maassluis Sleutelservice · Pieter Jelle Troelstraweg 7, Maassluis · 06 23 06 22 73</div><nav class="privacy-nav" aria-label="Navigatie"><a href="/">Home</a><a href="/sleutels.html">Sleutels</a><a href="/sloten.html">Sloten</a><a href="/machines.html">Machines</a><a href="/over-ons.html">Over ons</a><a href="/vragen.html">Vragen</a><a href="/contact.html">Contact</a><a href="/privacy.html" aria-current="page">Privacy</a></nav></div></footer>
 </body>
 </html>
